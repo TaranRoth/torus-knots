@@ -9,11 +9,11 @@ def get_unsimplified_poly(n):
         return Polynomial(coeffs)
 
 def get_alexander(p: int, q: int, cursor):
-    disregard_alexander = True
+    disregard_alexander = False
     if disregard_alexander:
         return [(0, 1)]
 
-    cache_flag = True
+    cache_flag = False
     if cache_flag:
         cursor.execute(f'SELECT alexander_blob FROM alexander_backup WHERE p = {p} AND q = {q}')
         cached_poly = pickle.loads(cursor.fetchone()[0])

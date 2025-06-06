@@ -27,11 +27,12 @@ def get_plot(cursor, function, title, condition, columns, coloring={'1:1':'steel
     plt.grid(True, linestyle='--', linewidth=0.5)
     plt.tight_layout()
 
-conn = sql.connect('knots.db')
-conn.execute('BEGIN')
-cursor = conn.cursor()
-p_limit = 1024
-get_plot(cursor, scatter, 'Torus Knots with Nonorientable 4-genus 1', 'lower = 1 AND upper = 1', 'p,q', {'1=1':'steelblue'}, p_limit)
-get_plot(cursor, scatter, 'Torus Knots with Possible Nonorientable 4-genus 1', 'lower = 1', 'p,q', {'1=1' : 'steelblue', 'lower = upper' : 'red'}, p_limit)
-plt.show()
-conn.close()
+if __name__ == '__main__':
+    conn = sql.connect('knots.db')
+    conn.execute('BEGIN')
+    cursor = conn.cursor()
+    p_limit = 1024
+    get_plot(cursor, scatter, 'Torus Knots with Nonorientable 4-genus 1', 'lower = 1 AND upper = 1', 'p,q', {'1=1':'steelblue'}, p_limit)
+    get_plot(cursor, scatter, 'Torus Knots with Possible Nonorientable 4-genus 1', 'lower = 1', 'p,q', {'1=1' : 'steelblue', 'lower = upper' : 'red'}, p_limit)
+    plt.show()
+    conn.close()

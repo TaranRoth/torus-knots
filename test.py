@@ -30,7 +30,7 @@ print(flag)
 
 conn.close()
 """
-
+"""
 from invs.alexander import get_alexander
 import math
 
@@ -40,6 +40,8 @@ q = None
 for q in [8]:
     val = ((t ** (p * q) - 1) * (t - 1)) / ((t ** p - 1) * (t ** q - 1)) if math.gcd(p, q) == 1 else 1
     print(val % 4 ** 410)
+"""
+
 
 
 
