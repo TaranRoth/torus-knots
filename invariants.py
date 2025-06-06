@@ -14,7 +14,7 @@ from upper import get_uppers
 
 sys.setrecursionlimit(10000)
 drop = True
-p_limit = 8192
+p_limit = 16384
 invariant_presets = {
     'sig' : ('signature', get_sig, 'INTEGER'),
     'ups' : ('upsilon', get_upsilon, 'INTEGER'),
