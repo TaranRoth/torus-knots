@@ -1,3 +1,5 @@
+import sqlite3 as sql
+
 def fc_12(p: int, q: int):
     if q == 6:
         temp = p
@@ -25,3 +27,8 @@ def fc_13(p: int, q: int):
         if q % 10 == 1:
             return (1, 2)
     return (0, None)
+
+def get_conn_cursor(db):
+    conn = sql.connect(db)
+    conn.execute('BEGIN')
+    return (conn, conn.cursor()) 

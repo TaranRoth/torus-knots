@@ -1,7 +1,6 @@
 import sqlite3 as sql
 import math
 import sys
-import pickle
 from invs.signature import get_sig
 from invs.upsilon import get_upsilon
 from invs.arf import get_arf
@@ -14,7 +13,7 @@ from upper import get_uppers
 
 sys.setrecursionlimit(10000)
 drop = True
-p_limit = 64
+p_limit = 1024
 invariant_presets = {
     'sig' : ('signature', get_sig, 'INTEGER'),
     'ups' : ('upsilon', get_upsilon, 'INTEGER'),

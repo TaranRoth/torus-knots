@@ -28,4 +28,8 @@ def get_uppers(p: int, q: int, invs: list):
         uppers.append(max(p, q) / 2 - 1)
     if invs[5] is not None:
         uppers.append(invs[5])
+
+    # Longo
+    if q % 4 == 0 and (((q / 2) + 1) ** 2 == p or ((q / 2) - 1) ** 2 == p):
+        uppers.append(q / 2 - 1)
     return uppers
