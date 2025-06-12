@@ -11,7 +11,7 @@ from invs.n3genus import get_n3genus
 from lower import get_lowers
 from upper import get_uppers
 
-sys.setrecursionlimit(10000)
+sys.setrecursionlimit(999999999)
 drop = True
 p_limit = 1024
 invariant_presets = {
