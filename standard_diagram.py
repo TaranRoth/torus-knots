@@ -2,7 +2,8 @@ import turtle
 import sys
 from svg_turtle import SvgTurtle
 
-def draw_standard_diagram(p: int, q: int, scalar, prop, prop_2, pen):
+# p, q are torus knot indices, a is the int/tuple representing one break point, b is the int/tuple of the other, 
+def draw_standard_diagram(p: int, q: int, scalar, prop, prop_2, pen, band: bool=False, a: int=None, b: int=None, over: bool=True):
     """
     screen = turtle.Screen()
     screen.title(f"({p}, {q}) Torus Knot")
@@ -80,13 +81,15 @@ def draw_standard_diagram(p: int, q: int, scalar, prop, prop_2, pen):
         pen.forward(c * scalar)
         c += 1
 
-def save_standard_diagram_img(p: int, q: int, scalar, prop, prop_2, width, height, filename):
+
+def save_standard_diagram_img(p: int, q: int, filename: str, scalar=30, prop=.7, prop_2=1.2, width=2048, height=2048, band=False, band_info=[]):
     t = SvgTurtle(width, height)
-    draw_standard_diagram(p, q, scalar, prop, prop_2, t)
+    draw_standard_diagram(p, q, scalar, prop, prop_2, t, True, 1, 2, True)
     t.save_as(filename)
+
 
 if __name__ == '__main__':
     # draw_standard_diagram(10, 7, 20, .8, 1.2)
     p = int(sys.argv[1])
     q = int(sys.argv[2])
-    img = save_standard_diagram_img(p, q, 30, .7, 1.2, 2048, 2048, f'imgs/({p}, {q}).svg')
+    img = save_standard_diagram_img(p, q, f'imgs/({p}, {q}).svg', 30, .7, 1.2, 2048, 2048, True, [1, 2, True])

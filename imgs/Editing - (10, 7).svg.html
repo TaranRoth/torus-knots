@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://www.gifgit.com/image/brush-tool -->
+<html lang="en" class="mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Editing - (10, 7).svg</title>
+		<link rel="shortcut icon" type="image/x-icon" href="https://www.gifgit.com/site-images/favicon.ico?v=4">
+		<!-- search engine stuff -->
+		<meta name="description" content="Online image brush tool.">		
+		<meta name="author" content="GIFGIT">	
+		<meta name="keywords" content="image brush, brush tool, online brush tool, online image brush, online image editor">
+		<!--  -->
+		
+		<!-- styles -->
+		<!-- page header stylesheet -->
+		<link rel="stylesheet" href="./Editing - (10, 7).svg_files/page-header.css" type="text/css">
+		<link rel="stylesheet" href="./Editing - (10, 7).svg_files/toolpreview.css" type="text/css">	
+		<!-- panel siderbar style -->
+		<link rel="stylesheet" href="./Editing - (10, 7).svg_files/panels-sidebar.css" type="text/css">	
+		<!-- modal dialog overlay stylesheet for firebase login -->
+		<link rel="stylesheet" href="./Editing - (10, 7).svg_files/login-overlay.css" type="text/css">
+		<!-- snackbar popup -->
+		<link rel="stylesheet" href="./Editing - (10, 7).svg_files/snackbar.css" type="text/css">
+		<!-- editor download modal popup -->
+		<link rel="stylesheet" href="./Editing - (10, 7).svg_files/toolpreview-editor-export-modal.css" type="text/css">	
+		<!-- countdown timer -->
+		<link rel="stylesheet" href="./Editing - (10, 7).svg_files/countdown-timer.css" type="text/css">
+		<!-- app download modal dialog overlay stylesheet -->
+		<link rel="stylesheet" href="./Editing - (10, 7).svg_files/app-download-modal.css" type="text/css">
+		
+		<!-- Firebase UI for Auth -->
+		<script src="./Editing - (10, 7).svg_files/f(6).txt"></script><script src="./Editing - (10, 7).svg_files/f(7).txt"></script><script src="./Editing - (10, 7).svg_files/sdk.js" async="" crossorigin="anonymous"></script><script src="./Editing - (10, 7).svg_files/firebase-ui-auth.js"></script>
+		<link type="text/css" rel="stylesheet" href="./Editing - (10, 7).svg_files/firebase-ui-auth.css">					
+
+		<!-- jquery and jquery ui -->
+		<!-- https://jqueryui.com/menu/ -->
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+		<link rel="stylesheet" href="./Editing - (10, 7).svg_files/jquery-ui.css">
+		<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+		<script src="./Editing - (10, 7).svg_files/jquery-1.12.4.js"></script>
+		<script src="./Editing - (10, 7).svg_files/jquery-ui.js"></script>	
+		<script>
+		  $( function() {
+			$( "#file_menu" ).menu();
+			$( "#edit_menu" ).menu();
+			$( "#selection_menu" ).menu();
+			$( "#image_menu" ).menu();
+			$( "#tools_menu" ).menu();
+			$( "#color_menu" ).menu();
+			$( "#filter_menu" ).menu();
+		  } );
+		</script>
+		<style>
+		  .ui-menu { width: 200px; }
+		</style>
+	
+		<script src="./Editing - (10, 7).svg_files/spectrum.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./Editing - (10, 7).svg_files/spectrum.min.css">
+		
+		<script>
+		
+			if(getCookie("image_edit_present")){
+				
+			}else{
+				//alert("no cookie set");
+			}
+		
+			function getCookie(cname) {
+			  var name = cname + "=";
+			  var decodedCookie = decodeURIComponent(document.cookie);
+			  var ca = decodedCookie.split(';');
+			  for(var i = 0; i <ca.length; i++) {
+				var c = ca[i];
+				while (c.charAt(0) == ' ') {
+				  c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+				  return c.substring(name.length, c.length);
+				}
+			  }
+			  return "";
+			}		
+		</script>
+		
+		<!-- adsense connect -->
+		<!-- <script data-ad-client="ca-pub-3410459897674191" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+		<!-- You can use Open Graph tags to customize link previews.
+		Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+		<meta property="og:url" content="https://www.gifgit.com/">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Gifgit Online Image Editor">
+		<meta property="og:description" content="Edit images from anywhere with the online image editor at gifgit.com">
+		<meta property="og:image" content="https://www.gifgit.com/site-images/homepage/kingfisher-bird.jpg">
+							
+    <meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9wSqI5i0iwGdf6L1CERNdmsTPgVu44ewj8QxTBYgsv1LCPUVF7YmWOvTappqB1139jAymxUW/RO8zmMqo4zlAAAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A+d7vJfYtay4OUbdtRPZA3y7bKQLsxaMEPmxgfhBGqKXNrdkCQeJlUwqa6EBbSfjwFtJWTrWIioXeMW+y8bWAgQAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9wSqI5i0iwGdf6L1CERNdmsTPgVu44ewj8QxTBYgsv1LCPUVF7YmWOvTappqB1139jAymxUW/RO8zmMqo4zlAAAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A+d7vJfYtay4OUbdtRPZA3y7bKQLsxaMEPmxgfhBGqKXNrdkCQeJlUwqa6EBbSfjwFtJWTrWIioXeMW+y8bWAgQAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script async="" src="./Editing - (10, 7).svg_files/ca-pub-3410459897674191"></script><script async="" src="./Editing - (10, 7).svg_files/AGSKWxWScKkB6wCgmfeF7xGPrIDa7t2cUEOjM_SclXZ0xIoCnVJfaGCmR95Se4IHyT4lTab8XUrnZxb5UEqUEGcCXi6-lTqCLnyOY5Ixrh-wBuXK-iOVWH8ptmdd1uhvonoNbaSClV3XZg=="></script><script async="" src="./Editing - (10, 7).svg_files/AGSKWxVVqRW_dbIGQvO-Cgd-nhp-iuL4uhmCKbZGK_EykWbih6_mcIQhr9r0I282Q1s_3c_-3bzspOBobBfhH4_wsDW5g_4jbkANhSUmilHthuLVvnIb_kZkHXaJKT-jdsUr3sKJmJLj7w=="></script><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+
+.fb_dialog{background:#525252b3;position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:700;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v4/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v4/ya/r/3rhSv5V8j3o.gif) #fff no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:#0006;inset:0;min-height:100%;position:absolute;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba),to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:#fff 0 1px 1px -1px inset;color:#fff;font:700 14px Helvetica,sans-serif;text-overflow:ellipsis;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2),to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:700 12px Helvetica,sans-serif;margin:2px -12px;padding:2px 6px 3px;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:700;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v4/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4A4A4A;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4A4A4A;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v4/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+</style><meta http-equiv="origin-trial" content="AxjhRadLCARYRJawRjMjq4U8V8okQvSnrBIJWdMajuEkN3/DfVAcLcFhMVrUWnOXagwlI8dQD84FwJDGj9ohqAYAAABveyJvcmlnaW4iOiJodHRwczovL2dvb2dsZWFkc2VydmljZXMuY29tOjQ0MyIsImZlYXR1cmUiOiJGZXRjaExhdGVyQVBJIiwiZXhwaXJ5IjoxNzI1NDA3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script async="" src="./Editing - (10, 7).svg_files/AGSKWxUSgdL7ecTkLxa9f-eat7jLJqeUT0Fe-wLiY5hdZ4Ei0L4rDt3x3LCeqY4Ao187ZvaPPy1R_DsqSUZEymqIRnOdtW1Ub8NUF2ZcxcmoWxyupegDIiohD316ydoVs9BDd1IBNxb-7g=="></script></head>
+
+    <body data-new-gr-c-s-check-loaded="14.1239.0" data-gr-ext-installed="" style="padding: 120px 0px 0px;">
+	
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+		<script async="" defer="" crossorigin="anonymous" src="./Editing - (10, 7).svg_files/sdk(1).js"></script>
+
+		<!-- inPageLoginDiv -->
+		<div id="inPageLoginDiv" class="login-overlay">
+
+    <!-- Overlay content -->
+    <!-- *** Firebase Authentication UI *** -->
+    <div class="login-overlay-content">
+        <div style="background-color: #fff; width: 450px; margin: auto; padding: 20px 0px 60px 0px;">
+            <div id="closeLoginDialogDiv" style="text-align: right;">
+                <div style="padding: 0px 10px;">
+                    <!-- Button to close the overlay navigation -->
+                    <a id="loginModalCloseBtn" href="javascript:void(0)" class="login-closebtn" onclick="gifgitClient.cancelLoginDialog()">×</a>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <h1 id="authTitleLbl">
+                    Login
+                </h1>
+            </div>
+            <!-- div containing firebase generated ui for auth -->
+            <div id="firebaseui-auth-container"></div>
+            <!-- loader animation waiting for response from rest api login call -->
+            <div id="loginLoaderAnimationDiv" style="display: block;">
+                <div style="text-align: center;">
+                    <div class="login-loader"></div>
+                </div>
+            </div> 
+            <!-- Div for a new user to set username -->
+            <div id="signupSetUsernameDiv" style="display: block;">
+                <div style="width: 87%; margin: auto; border-bottom: 1px solid #ccc; box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);">
+                    <div style="padding: 20px;" data-np-autofill-form-type="register" data-np-checked="1" data-np-watching="1">
+                        <div>
+                            <span style="font-weight: bold; font-size: 17px;">Edit your information</span>
+                        </div>
+                        <div id="newUsernameInputDiv" style="margin: 20px 0px 0px 0px;">
+                            <div>
+                                <span style="font-size: 13px; color: #555;">Username</span>								
+                            </div>
+                            <div>
+                                <input type="text" id="newUsernameInput" placeholder="enter username" value="" data-np-autofill-field-type="username">	
+                                <span id="lowercaseWarningLbl" style="display: none; font-size: 13px; color: #555;">* Lowercase characters only</span>						
+                            </div>
+                            <div>
+                                <span id="usernameErrorMsg" style="color: red; font-size: 12px;"></span>
+                            </div>
+                        </div>
+                        <div id="displayNameInputDiv" style="margin: 20px 0px 0px 0px;">
+                            <div>
+                                <span style="font-size: 13px; color: #555;">Display name</span>								
+                            </div>
+                            <div>
+                                <input type="text" id="displayNameInput" value="" data-np-intersection-state="visible">								
+                            </div>
+                            <div>
+                                <span id="displayNameErrorMsg" style="color: red; font-size: 12px;"></span>
+                            </div>
+                        </div>
+                        <!--
+                        <div id="newUserEmailInputDiv" style="margin: 20px 0px 0px 0px;">
+                            <div>
+                                <span style="font-size: 13px; color: #555;">Email</span>								
+                            </div>
+                            <div>
+                                <input type="email" id="newUserEmailInput" placeholder="" value="">								
+                            </div>
+                        </div>
+                        -->
+                        <div style="margin: 8px 0px 0px 0px;">
+                            <div style="float: left;">
+                            </div>
+                            <div style="float: right;">
+                                <input type="button" id="signUpComplBtn" onclick="gifgitClient.setAccountUsername()" value="Continue">
+                            </div>
+                            <div style="clear: both;"></div>								
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Div for when new user has complete setting user name -->
+            <div id="signupCompleteMsgDiv" style="display: block; text-align: center;">
+                <div>
+                    <span id="signupCompleteLbl" style="font-weight: bold;">Your signup is complete</span>
+                </div>
+                <div id="verificationEmailSentDiv" style="text-align: center; display: block; width: 400px; margin: 10px auto 0px auto;">
+                    <span style="font-size: 14px;">
+                        A verification email has been sent to 
+                        <span id="newUserEmailLbl">someemailuser@email.com</span>. Check your inbox/junk folder
+                        for the link to verify your account. 
+                    </span>
+                </div>
+                <div id="verifiedEmailReqdDiv" style="text-align: center; display: block; width: 400px; margin: 10px auto 0px auto;">
+                    <span style="font-size: 14px;">
+                        Please add a verified email to your <a style="color: #216edb;" href="https://www.gifgit.com/account/settings" target="_blank">account</a>. 
+                    </span>
+                </div>
+                <div style="padding: 10px 0px 0px 0px;">
+                    <input type="button" onclick="gifgitClient.closeLoginDialog()" value="Close">							
+                </div>
+            </div>
+            <!-- Extra stuff for login -->
+            <div id="extraForLoginDiv" style="text-align: center; padding: 10px 0px 0px 0px;">
+                <div>
+                    <!--
+                        WE HAVE REMOVED href="/account/resetpassword?redir=%2Fimage%2Fbrush-tool
+                        Originally we had: href="/account/resetpassword?redir=%2Fimage%2Fbrush-tool"
+                        where we would pass the URL of the current page of the login modal to the forgotpassword page. 
+                        But this seemed to generate a self propagating error with Ahrefs robot where the 'redir' parameter passed to
+                        resetpassword would propagate the url endlessly in the forgot password link of the login modal in it resulting in 
+                        search bot queries as below.
+                        /account/resetpassword?redir=%2Faccount%2Fresetpassword%3Fredir%3D%252Faccount%252Fresetpassword%253Fredir%253D%25252Faccount%25252Fresetpassword%25253Fredir%25253D%2525252Faccount%2525252Fresetpassword%2525253Fredir%2525253D%252525252Faccount%252525252Fresetpassword%252525253Fredir%252525253D%25252525252Faccount%25252525252Fresetpassword%25252525253Fredir%25252525253D%2525252525252Faccount%2525252525252Fresetpassword%2525252525253Fredir%2525252525253D%252525252525252Faccount%252525252525252Fresetpassword%252525252525253Fredir%252525252525253D%25252525252525252Faccount%25252525252525252Fresetpassword%25252525252525253Fredir%25252525252525253D%2525252525252525252Faccount%2525252525252525252Fresetpassword%2525252525252525253Fredir%2525252525252525253D%252525252525252525252Faccount%252525252525252525252Fresetpassword%252525252525252525253Fredir%252525252525252525253D%25252525252525252525252Faccount%25252525252525252525252Fresetpassword%25252525252525252525253Fredir%25252525252525252525253D%2525252525252525252525252Faccount%2525252525252525252525252Fresetpassword%2525252525252525252525253Fredir%2525252525252525252525253D%252525252525252525252525252Faccount%252525252525252525252525252Fresetpassword%252525252525252525252525253Fredir%252525252525252525252525253D%25252525252525252525252525252Faccount%25252525252525252525252525252Fresetpassword%25252525252525252525252525253Fredir%25252525252525252525252525253D%2525252525252525252525252525252Ffonts%2525252525252525252525252525252Ffenix
+                    -->
+                    <a id="loginModalGetPwdLnk" href="https://www.gifgit.com/account/resetpassword">forgot password</a>
+                </div>
+                <div>
+                    <a id="loginModalRegisterLnk" href="javascript:void(0)" onclick="gifgitClient.resetLogin(&#39;signup&#39;)">register</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+		<div id="appDownloadModal" class="app-download-modal">
+
+    <!-- Modal content -->
+    <div class="app-download-modal-content">
+      <span class="app-download-modal-close">×</span>
+      <p>
+        <span class="app-download-modal-title">Get the Gifgit App</span>
+        <br>
+        <img src="./Editing - (10, 7).svg_files/android-app-qr.png" width="140">
+        <br>
+        Use QR code above or click the button below to download
+        <br><br>
+        <a href="https://play.google.com/store/apps/details?id=com.gifgit.android&amp;pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+            <img width="180px" alt="Get it on Google Play" src="./Editing - (10, 7).svg_files/en_badge_web_generic.png">
+        </a>
+        <br><br>
+        <span class="app-download-modal-legal">
+            Google Play and the Google Play logo are trademarks of Google LLC.
+        </span>
+      </p>
+    </div>
+  
+  </div>	
+		<div id="main" style="height: auto !important;">
+		
+			<header>
+				<nav>
+					<!-- header -->				
+					                    <div class="header">
+                        <a href="https://www.gifgit.com/" class="logo">
+                            <img src="./Editing - (10, 7).svg_files/logo.png" alt="logo">
+                        </a>
+                        <div class="header-left">
+                            <a class="active" href="https://www.gifgit.com/image/brush-tool">Image</a> <!-- class="active" means selected -->
+                            <a class="" href="https://www.gifgit.com/gif/animated-gif-maker">GIF</a>
+                            <a class="" href="https://www.gifgit.com/meme/generator">Memes</a>						
+                            <a class="" href="https://www.gifgit.com/fonts/alphabetic?letter=a">Fonts</a>					
+                        </div>
+                        <div class="header-app-link">
+                            <a>
+                                Get app
+                            </a>
+                        </div>
+                        <div class="header-right" style="display: block">
+                            <input type="hidden" id="logDataInput" value="{&quot;authorized&quot;:false}">
+                            <input type="hidden" id="serverEnvironmentInput" value="{&quot;server_host&quot;:&quot;production&quot;,&quot;cdn_host&quot;:&quot;cdn.gifgit.com&quot;,&quot;cdn_path&quot;:&quot;pdcn&quot;,&quot;cdn_host_path_prefix&quot;:&quot;server-gSEkzMEg3ypd7cPqsYBx&quot;,&quot;user_content_cdn_path&quot;:&quot;user-content&quot;,&quot;gallery_content_cdn_path&quot;:&quot;gallery-content&quot;,&quot;project_source_content_cdn_path&quot;:&quot;projects-source-content&quot;,&quot;project_source_file_cdn_path&quot;:&quot;projects-source-file&quot;,&quot;user_daily_image_edit_saves_quota&quot;:15,&quot;resource_version&quot;:&quot;1739367412188&quot;,&quot;server_maintenance&quot;:false}">
+                            <input type="hidden" id="firebaseConfigInput" value="{&quot;apiKey&quot;:&quot;AIzaSyCfw4AYH_L7bKbgeJrb1-YQ0qsJyqXm5UI&quot;,&quot;authDomain&quot;:&quot;gifgit.app&quot;,&quot;databaseURL&quot;:&quot;https:\/\/maxtabsstaticsite-215515-default-rtdb.firebaseio.com&quot;,&quot;projectId&quot;:&quot;maxtabsstaticsite-215515&quot;,&quot;storageBucket&quot;:&quot;maxtabsstaticsite-215515.appspot.com&quot;,&quot;messagingSenderId&quot;:&quot;946950220002&quot;,&quot;appId&quot;:&quot;1:946950220002:web:d2ad28c9da7767699396bb&quot;,&quot;measurementId&quot;:&quot;G-RTEVT0RS4X&quot;}">
+                            <!-- <a id="loginButton" style="display: none;" target="_blank" href="/login">Login</a>-->
+                            <a id="loginButton" style="display: block;" href="javascript:void(0)" onclick="gifgitClient.startLogin(&#39;login&#39;)">Login</a>
+                            <!-- <a id="signupButton" style="display: none;" target="_blank" href="/account/signup">Sign Up</a> -->
+                            <a id="signupButton" style="display: block;" href="javascript:void(0)" onclick="gifgitClient.startLogin(&#39;signup&#39;)">Sign Up</a>
+                            <div style="display: none; position: relative;" id="loggedDropdownButton">
+                                <!-- profile photo -->
+                                <div style="position: relative;">
+                                    <img id="headerProfilePhoto" style="width: 32px; height: 32px; border-radius: 16px; border: 1px solid #ccc; vertical-align: middle;" src="https://www.gifgit.com/image/brush-tool">
+                                    <!-- Div to prevent right click -->
+                                    <div style="cursor: pointer; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(255,255,255, 0);"></div>
+                                </div>
+                                <!-- user name -->
+                                <span id="usernameLbl" style="display: none; cursor: pointer; user-select: none;"></span>
+                                <div id="loggedDropdownPanelDiv">
+                                    <div>
+                                        <div>
+                                            <a id="headerDropdownProfileLnk" href="https://www.gifgit.com/" target="_self">Profile</a>
+                                        </div>
+                                        <div>
+                                            <a id="headerDropdownGalleryLnk" href="https://www.gifgit.com/account/gallery" target="_self">Gallery</a>
+                                        </div>
+                                        <div>
+                                            <a id="headerDropdownSettingsLnk" href="https://www.gifgit.com/account/settings" target="_self">Settings</a>
+                                        </div>
+                                        <div>
+                                            <a id="logoutButton" href="javascript:void(0)">Log out</a>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>					<!-- Navigation Bar -->	
+					                    <div style="text-align: center; border-bottom: 1px solid #f2f2f2; padding: 10px 10px;">
+                        <a id="animated-gif-maker_navLink" class="gif_nav_class" href="https://www.gifgit.com/image/editing-tools" style="text-decoration: underline; color: #000; cursor: pointer;">Tools</a>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a id="edit_navLink" class="gif_nav_class" href="https://www.gifgit.com/image/filters-and-effects" style="text-decoration: none; color: #000; cursor: pointer;">Filters</a>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a class="gif_nav_class" href="https://www.gifgit.com/image/color-adjustments" style="text-decoration: none; color: #000; cursor: pointer;">Colors</a>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a class="gif_nav_class" href="https://www.gifgit.com/image/transformations" style="text-decoration: none; color: #000; cursor: pointer;">Transforms</a>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a class="gif_nav_class" href="https://www.gifgit.com/image/clipping" style="text-decoration: none; color: #000; cursor: pointer;">Clipping</a>
+                    </div>					</nav>
+			</header>
+		
+			<section id="notSupportedDiv" style="display: none; background-image: linear-gradient(#fff, #eee);">
+				<div style="width: 500px; padding: 5px 0px 25px 0px; margin: auto; text-align: center;">
+					<span style="font-size: 40px;">⚠</span>
+					<br>
+					We're sorry, to use this web app your browser needs to support 
+					<br>
+					Local Storage
+				</div>
+			</section>
+			
+			<div style="text-align: center;">
+			
+				<!-- @ad_unit_header-container-template --><div class="ad_unit_header-container"> <div class="ad_unit_header"> <script async="" src="./Editing - (10, 7).svg_files/f(8).txt"></script> <!-- gifgit-responsive-horizontal --> <ins class="adsbygoogle ad_unit_header" style="display: inline-block; width: 728px; height: 90px;" data-ad-client="ca-pub-3410459897674191" data-ad-slot="5748992224" data-adsbygoogle-status="done" data-ad-status="unfilled"><div id="aswift_0_host" style="border: none; height: 90px; width: 728px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" browsingtopics="true" style="left:0;position:absolute;top:0;border:0;width:728px;height:90px;min-height:auto;max-height:none;min-width:auto;max-width:none;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="./Editing - (10, 7).svg_files/ads.html" data-google-container-id="a!1" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CMG1xYub7Y0DFU-DUAYdzrEzSA" data-load-complete="true"></iframe></div></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script> </div> </div><!-- @ad_unit_header-container-template-end -->
+			
+				<h1 style="font-size: 45px; font-family: arial; padding: 8px 0px;">
+					Brush Tool
+				</h1>
+				
+			</div>
+			
+			<div id="toolpageEditorDiv">
+					
+				<div id="uploaderDiv" class="tool-summary" style="display: none;">
+					<div style="text-align: left; background-color: #f5f5f7; padding: 12px 16px 16px 16px; border: 1px solid #eaeaec;  border-radius: 5px;">
+						<div>
+							<div style="float: left; padding: 8px 0px 0px 0px;">
+								<div style="border: 1px dashed #ccc; border-radius: 2px; padding: 15px; margin: 0px 25px 0px 0px;">
+									<input style="display: inline;" type="file" id="fileinput" accept="image/*">	
+								</div>
+								<div style="padding: 0px 0px 0px 10px;">
+									<a id="createNewImgBtn" title="New image with set width, height and background color" href="https://www.gifgit.com/image/upload?redir=brush-tool#custom-size">+ Create New...</a>
+								</div>											
+							</div>
+							<div style="float: left">
+								<div id="appDownloadModalBtn" style="border: 1px solid #ddd; padding: 12px; cursor: pointer; background-color: #fff; border-radius: 4px;">
+									<div style="float: left; padding: 12px 0px 0px 0px;">
+										<img width="24px" src="./Editing - (10, 7).svg_files/phone_android_black_48dp.svg" alt="mobile phone">
+									</div>
+									<div style="float: left; padding: 0px 0px 0px 12px;">
+										Get the App
+										<br>
+										<span style="font-size: 14px;">
+											Edit, upload and share images with your mobile phone using the App.
+										</span>
+									</div>
+									<div style="clear: both;"></div>
+								</div>
+								<span id="uploadBtn" style="display: none; cursor: pointer; font-family: arial; color: #fff; font-weight: bold; background-color: rgb(0,122,255); padding: 10px 16px; border-radius: 4px;">
+									UPLOAD
+								</span>
+								<table style="display: none;">
+									<tbody><tr>
+										<td style="vertical-align: top;">
+											<input type="radio" id="quickEditorRadio" name="gender" value="male" checked=""> 
+										</td>
+										<td>
+											Quick Editor
+											<br>
+											<span style="font-size: 14px;">
+												Load image in the simple editor <u>below</u> for quick editing.
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td style="vertical-align: top;">
+											<input type="radio" id="onlineEditorRadio" name="gender" value="female"> 
+										</td>
+										<td>
+											Online App (Beta)
+											<br>
+											<span style="font-size: 14px;">
+												Edit with layers panel, menus and user interface like a traditional raster graphics image editor.
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+										</td>
+										<td>
+											<div id="continueAppEdit" style="display: none; margin: 15px 0px 5px 0px; border-radius: 5px;">
+												<span onclick="window.location.replace(&#39;/image/editor/brush-tool&#39;);" onmouseover="this.style.textDecoration=&#39;underline&#39;" onmouseout="this.style.textDecoration=&#39;none&#39;" style="margin: 0px 0px 0px 0px; cursor: pointer; font-family: arial; color: #fff; font-weight: normal; background-image: linear-gradient(rgba(0, 104, 255, 1), rgba(2, 99, 255, 1)); padding: 8px 20px; border-radius: 4px;">
+													Continue last app edit »
+												</span>
+											</div>									
+										</td>
+									</tr>
+								</tbody></table>
+							</div>				
+							<div style="clear: both;"></div>
+						</div>
+					</div>	
+				</div>
+				
+				<!-- 
+				<div class="tool-summary">
+					<div style="float: left;">
+						<div style="float: left; border: 1px solid #ccc; border-radius: 3px; width: 60px; height: 80px; margin: 0px 8px 0px 0px;">
+						</div>				
+						<div style="float: left; border: 1px solid #ccc; border-radius: 3px;  width: 60px; height: 80px; margin: 0px 8px 0px 0px;">
+						</div>				
+						<div style="float: left; border: 1px solid #ccc; border-radius: 3px;  width: 60px; height: 80px; margin: 0px 8px 0px 0px;">
+						</div>				
+						<div style="float: left; border: 1px solid #ccc; border-radius: 3px;  width: 60px; height: 80px; margin: 0px 8px 0px 0px;">
+						</div>				
+						<div style="float: left; border: 1px solid #ccc; border-radius: 3px;  width: 60px; height: 80px; margin: 0px 8px 0px 0px;">
+						</div>
+						<div style="clear: both;"></div>
+					</div>
+					<div style="float: right;">
+						<div style="padding: 8px; background-color: #f0f0f2;">
+							<img src="/ad28.gif">
+						</div>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+				-->
+
+				<div id="editHeaderDiv" class="tool-summary">
+					<!-- menu will be here -->
+					<div id="editorMenuDiv">
+    <div style="float: left;">
+        <div class="dropdown">
+          <button class="dropbtn">File</button>
+          <div class="dropdown-content">
+            <ul id="file_menu" role="menu" tabindex="0" class="ui-menu ui-widget ui-widget-content">
+                <!-- <li class="ui-state-disabled"><div>Toys (n/a)</div></li> -->
+                <li class="ui-menu-item"><div id="openFileMenuItem" onclick="quickeditorEditorManager.openFile();" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Open</div></li>
+                <li id="file_menu_save" style="display: block" class="ui-menu-item"><div onclick="quickeditorEditorManager.saveProject();" id="ui-id-1" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Save</div></li>
+                <!-- <li><div onclick="quickeditorEditorManager.exporter.download();">Export/Download</div></li> -->
+                <li class="ui-menu-item">
+                    <div aria-haspopup="true" id="ui-id-2" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>Export/Download</div>
+                    <ul role="menu" aria-hidden="true" aria-expanded="false" class="ui-menu ui-widget ui-widget-content ui-front" style="display: none;">
+                        <li class="ui-menu-item"><div onclick="quickeditorEditorManager.exporter.showDownload(&#39;image/png&#39;);" id="ui-id-3" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">PNG</div></li>
+                        <li class="ui-menu-item"><div onclick="quickeditorEditorManager.exporter.showDownload(&#39;image/jpeg&#39;);" id="ui-id-4" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">JPG</div></li>
+                    </ul>
+                </li>
+                <li class="ui-menu-item"><div onclick="quickeditorEditorManager.closeFile();" id="ui-id-5" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Close</div></li>
+            </ul>
+          </div>
+        </div>		
+    </div>
+    <div style="float: left;">
+        <div class="dropdown">
+          <button class="dropbtn" onmouseover="quickeditorEditorManager.menu.updateEditMenu();">Edit</button>
+          <div class="dropdown-content">
+            <ul id="edit_menu" role="menu" tabindex="0" class="ui-menu ui-widget ui-widget-content">
+                <!-- <li class="ui-state-disabled"><div>Toys (n/a)</div></li> -->
+                <li class="ui-menu-item"><div id="edit_menu_undo" onclick="editHistory.back();" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Undo</div></li>
+                <li class="ui-menu-item"><div id="edit_menu_redo" onclick="editHistory.forward();" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Redo</div></li>
+                <!-- Divider elements can be created by including menu items that contain only spaces and/or dashes -->
+                <li class="ui-menu-divider ui-widget-content">-</li>
+                <li class="ui-menu-item"><div onclick="quickEditorClipboardManager.cut();" id="ui-id-6" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Cut</div></li>
+                <li class="ui-menu-item"><div onclick="quickEditorClipboardManager.copy();" id="ui-id-7" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Copy</div></li>
+                <li class="ui-menu-item"><div onclick="quickEditorClipboardManager.paste();" id="ui-id-8" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Paste</div></li>
+                <li class="ui-menu-divider ui-widget-content">-</li>
+                <li class="ui-menu-item"><div onclick="quickeditorSelectionManager.clearSelection();" id="ui-id-9" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Clear</div></li>
+                <li class="ui-menu-item"><div aria-haspopup="true" id="ui-id-10" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>Fill</div>
+                    <ul role="menu" aria-hidden="true" aria-expanded="false" class="ui-menu ui-widget ui-widget-content ui-front" style="display: none;">
+                        <li class="ui-menu-item"><div onclick="quickeditorSelectionManager.fillSelection(document.getElementById(&#39;foregroundColorMenuView&#39;).style.fill);" id="ui-id-11" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Foreground Color</div></li>
+                        <li class="ui-menu-item"><div onclick="quickeditorSelectionManager.fillSelection(document.getElementById(&#39;backgroundColorMenuView&#39;).style.fill);" id="ui-id-12" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Background Color</div></li>
+                    </ul>
+                </li>	
+            </ul>
+          </div>
+        </div>		
+    </div>				
+    <div style="float: left;">
+        <div class="dropdown">
+          <button class="dropbtn">Select</button>
+          <div class="dropdown-content">
+                <ul id="selection_menu" role="menu" tabindex="0" class="ui-menu ui-widget ui-widget-content" aria-activedescendant="selection_menu_select_all">
+                    <!-- <li class="ui-state-disabled"><div>Toys (n/a)</div></li> -->
+                    <li class="ui-menu-item"><div id="selection_menu_select_all" onclick="quickeditorSelectionManager.selectAll();" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">All</div></li>
+                    <li class="ui-menu-item"><div id="selection_menu_remove_selection" onclick="quickeditorSelectionManager.removeSelection();" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper" style="color: rgb(183, 183, 183);">Deselect</div></li>
+                    <li class="ui-menu-item"><div id="selection_menu_invert_selection" onclick="quickeditorSelectionManager.invertSelection();" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper" style="color: rgb(183, 183, 183);">Invert</div></li>
+                    <li class="ui-menu-divider ui-widget-content">-</li>
+                    <li class="ui-menu-item"><div id="selection_menu_border_selection" onclick="quickeditorSelectionManager.borderSelection(5);" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper" style="color: rgb(183, 183, 183);">Border...</div></li>
+                    <li class="ui-menu-item"><div id="selection_menu_expand_selection" onclick="quickeditorSelectionManager.expandSelection(5);" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper" style="color: rgb(183, 183, 183);">Expand...</div></li>
+                    <li class="ui-menu-item"><div id="selection_menu_contract_selection" onclick="quickeditorSelectionManager.contractSelection(5);" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper" style="color: rgb(183, 183, 183);">Contract...</div></li>
+                    <li class="ui-menu-item"><div id="selection_menu_remove_holes_selection" onclick="quickeditorSelectionManager.removeHoles();" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper" style="color: rgb(183, 183, 183);">Remove Holes</div></li>
+                </ul>
+          </div>
+        </div>
+    </div>		
+    <div style="float: left;">
+        <div class="dropdown">
+          <button class="dropbtn">Image</button>
+          <div class="dropdown-content">
+                <ul id="image_menu" role="menu" tabindex="0" class="ui-menu ui-widget ui-widget-content">
+                    <li class="ui-menu-item"><div aria-haspopup="true" id="ui-id-13" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>Transform</div>
+                        <ul role="menu" aria-hidden="true" aria-expanded="false" class="ui-menu ui-widget ui-widget-content ui-front" style="display: none;">
+                            <li class="ui-menu-item"><div onclick="quickeditorImageProcessor.flipImageHorizontally();" id="ui-id-14" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Flip Horizontally</div></li>
+                            <li class="ui-menu-item"><div onclick="quickeditorImageProcessor.flipImageVertically();" id="ui-id-15" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Flip Vertically</div></li>
+                            <li class="ui-menu-divider ui-widget-content"></li>
+                            <li class="ui-menu-item"><div onclick="quickeditorImageProcessor.rotateImage90Clockwise();" id="ui-id-16" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Rotate 90° CW</div></li>
+                            <li class="ui-menu-item"><div onclick="quickeditorImageProcessor.rotateImage90CounterClockwise();" id="ui-id-17" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Rotate 90° CCW</div></li>
+                            <li class="ui-menu-item"><div onclick="quickeditorImageProcessor.rotateImage180Clockwise();" id="ui-id-18" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Rotate 180</div></li>
+                        </ul>
+                    </li>
+                    <li class="ui-menu-item"><div id="ui-id-19" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/resize" style="text-decoration: none; color: #000;">Resize...</a></div></li>										
+                </ul>
+          </div>
+        </div>
+    </div>						
+    <div style="float: left;">
+        <div class="dropdown">
+          <button class="dropbtn">Tools</button>
+          <div class="dropdown-content">
+            <ul id="tools_menu" role="menu" tabindex="0" class="ui-menu ui-widget ui-widget-content">
+                <!-- <li class="ui-state-disabled"><div>Toys (n/a)</div></li> -->
+                <li class="ui-menu-item"><div aria-haspopup="true" id="ui-id-20" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>Selection Tools</div>
+                    <ul role="menu" aria-hidden="true" aria-expanded="false" class="ui-menu ui-widget ui-widget-content ui-front" style="display: none;">
+                        <li class="ui-menu-item"><div id="ui-id-21" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/rectangular-marquee-tool" style="text-decoration: none; color: #000;">Rectangular Marquee</a></div></li>
+                        <li class="ui-menu-item"><div id="ui-id-22" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/elliptical-marquee-tool" style="text-decoration: none; color: #000;">Elliptical Marquee</a></div></li>
+                        <li class="ui-menu-item"><div id="ui-id-23" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/lasso-tool" style="text-decoration: none; color: #000;">Lasso</a></div></li>
+                        <li class="ui-menu-item"><div id="ui-id-24" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/polygon-lasso-tool" style="text-decoration: none; color: #000;">Polygon Lasso</a></div></li>
+                        <li class="ui-menu-item"><div id="ui-id-25" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/magic-wand-tool" style="text-decoration: none; color: #000;">Magic Wand</a></div></li>
+                    </ul>
+                </li>
+                <li class="ui-menu-item"><div aria-haspopup="true" id="ui-id-26" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>Painting Tools</div>
+                    <ul role="menu" aria-hidden="true" aria-expanded="false" class="ui-menu ui-widget ui-widget-content ui-front" style="display: none;">
+                        <li class="ui-menu-item"><div id="ui-id-27" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/paint-bucket-tool" style="text-decoration: none; color: #000;">Paint Bucket</a></div></li>
+                        <!-- <li><div><a href="/image/editor/gradient-tool" style="text-decoration: none; color: #000;">Gradient Tool</a></div></li> -->
+                        <li class="ui-menu-item"><div id="ui-id-28" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/brush-tool" style="text-decoration: none; color: #000;">Brush</a></div></li>							
+                        <li class="ui-menu-item"><div id="ui-id-29" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/eraser-tool" style="text-decoration: none; color: #000;">Eraser</a></div></li>							
+                        <li class="ui-menu-item"><div id="ui-id-30" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/background-eraser-tool" style="text-decoration: none; color: #000;">Background Eraser</a></div></li>							
+                        <li class="ui-menu-item"><div id="ui-id-31" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/magic-eraser-tool" style="text-decoration: none; color: #000;">Magic Eraser</a></div></li>							
+                        <li class="ui-menu-item"><div id="ui-id-32" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/clone-stamp-tool" style="text-decoration: none; color: #000;">Clone Stamp</a></div></li>							
+                        <li class="ui-menu-item"><div id="ui-id-33" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/blur-tool" style="text-decoration: none; color: #000;">Blur</a></div></li>							
+                        <li class="ui-menu-item"><div id="ui-id-34" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/sharpen-tool" style="text-decoration: none; color: #000;">Sharpen</a></div></li>							
+                        <li class="ui-menu-item"><div id="ui-id-35" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/dodge-tool" style="text-decoration: none; color: #000;">Dodge</a></div></li>							
+                        <li class="ui-menu-item"><div id="ui-id-36" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/burn-tool" style="text-decoration: none; color: #000;">Burn</a></div></li>							
+                        <li class="ui-menu-item"><div id="ui-id-37" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/sponge-tool" style="text-decoration: none; color: #000;">Sponge</a></div></li>							
+                    </ul>
+                </li>
+                <li class="ui-menu-item"><div aria-haspopup="true" id="ui-id-38" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>Drawing Tools</div>
+                    <ul role="menu" aria-hidden="true" aria-expanded="false" class="ui-menu ui-widget ui-widget-content ui-front" style="display: none;">
+                        <li class="ui-menu-item"><div id="ui-id-39" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/rectangle-tool" style="text-decoration: none; color: #000;">Rectangle Tool</a></div></li>					
+                        <li class="ui-menu-item"><div id="ui-id-40" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/ellipse-tool" style="text-decoration: none; color: #000;">Ellipse Tool</a></div></li>					
+                        <li class="ui-menu-item"><div id="ui-id-41" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/line-tool" style="text-decoration: none; color: #000;">Line Tool</a></div></li>					
+                        <li class="ui-menu-item"><div id="ui-id-42" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/polygon-tool" style="text-decoration: none; color: #000;">Polygon Tool</a></div></li>					
+                    </ul>
+                </li>									
+                <li class="ui-menu-item"><div id="ui-id-43" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/color-picker-tool" style="text-decoration: none; color: #000;">Color Picker</a></div></li>					
+                <li class="ui-menu-item"><div id="ui-id-44" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/crop-tool" style="text-decoration: none; color: #000;">Crop Tool</a></div></li>
+            </ul>
+          </div>
+        </div>
+    </div>	
+    <div style="float: left;">
+        <div class="dropdown">
+          <button class="dropbtn">Colors</button>
+          <div class="dropdown-content">
+            <ul id="color_menu" role="menu" tabindex="0" class="ui-menu ui-widget ui-widget-content">
+                <!-- <li class="ui-state-disabled"><div>Toys (n/a)</div></li> -->
+                <li class="ui-menu-item"><div id="ui-id-45" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/adjust-image-brightness" style="text-decoration: none; color: #000;">Brightness</a></div></li>
+                <li class="ui-menu-item"><div id="ui-id-46" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/adjust-image-contrast" style="text-decoration: none; color: #000;">Contrast</a></div></li>
+                <li class="ui-menu-item"><div id="ui-id-47" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/grayscale-image" style="text-decoration: none; color: #000;">Grayscale</a></div></li>
+                <li class="ui-menu-item"><div id="ui-id-48" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/adjust-image-hue" style="text-decoration: none; color: #000;">Hue</a></div></li>
+                <li class="ui-menu-item"><div id="ui-id-49" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/invert-image-colors" style="text-decoration: none; color: #000;">Invert Colors</a></div></li>
+                <li class="ui-menu-item"><div id="ui-id-50" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/adjust-image-saturation" style="text-decoration: none; color: #000;">Saturation</a></div></li>
+                <li class="ui-menu-item"><div id="ui-id-51" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/apply-sepia" style="text-decoration: none; color: #000;">Sepia</a></div></li>
+            </ul>
+          </div>
+        </div>
+    </div>	
+    <div style="float: left;">
+        <div class="dropdown">
+          <button class="dropbtn">Filters</button>
+          <div class="dropdown-content">
+                <ul id="filter_menu" role="menu" tabindex="0" class="ui-menu ui-widget ui-widget-content">
+                    <!-- <li class="ui-state-disabled"><div>Toys (n/a)</div></li> -->
+                    <li class="ui-menu-item"><div aria-haspopup="true" id="ui-id-52" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>Blur</div>
+                        <ul role="menu" aria-hidden="true" aria-expanded="false" class="ui-menu ui-widget ui-widget-content ui-front" style="display: none;">
+                            <li class="ui-menu-item"><div id="ui-id-53" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/zoom-blur-filter" style="text-decoration: none; color: #000;">Zoom Motion Blur</a></div></li>
+                            <li class="ui-menu-item"><div id="ui-id-54" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/triangle-blur-filter" style="text-decoration: none; color: #000;">Triangle Blur</a></div></li>
+                            <li class="ui-menu-item"><div id="ui-id-55" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/lens-blur-filter" style="text-decoration: none; color: #000;">Lens Blur</a></div></li>
+                            <li class="ui-menu-item"><div id="ui-id-56" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/tilt-shift-blur-filter" style="text-decoration: none; color: #000;">Tilt Shift Blur</a></div></li>
+                        </ul>
+                    </li>						
+                    <li class="ui-menu-item"><div aria-haspopup="true" id="ui-id-57" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>Distort</div>
+                        <ul role="menu" aria-hidden="true" aria-expanded="false" class="ui-menu ui-widget ui-widget-content ui-front" style="display: none;">
+                            <li class="ui-menu-item"><div id="ui-id-58" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/swirl-image" style="text-decoration: none; color: #000;">Swirl</a></div></li>
+                            <li class="ui-menu-item"><div id="ui-id-59" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/pinch-image" style="text-decoration: none; color: #000;">Pinch</a></div></li>
+                            <li class="ui-menu-item"><div id="ui-id-60" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/spherize-image" style="text-decoration: none; color: #000;">Spherize/Bulge</a></div></li>
+                        </ul>
+                    </li>						
+                    <li class="ui-menu-item"><div aria-haspopup="true" id="ui-id-61" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>Light and Shadow</div>
+                        <ul role="menu" aria-hidden="true" aria-expanded="false" class="ui-menu ui-widget ui-widget-content ui-front" style="display: none;">
+                            <li class="ui-menu-item"><div id="ui-id-62" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/add-vignette-effect" style="text-decoration: none; color: #000;">Vignette</a></div></li>
+                        </ul>
+                    </li>
+                    <li class="ui-menu-item"><div aria-haspopup="true" id="ui-id-63" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>Noise</div>
+                        <ul role="menu" aria-hidden="true" aria-expanded="false" class="ui-menu ui-widget ui-widget-content ui-front" style="display: none;">
+                            <li class="ui-menu-item"><div id="ui-id-64" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/add-image-noise" style="text-decoration: none; color: #000;">Add Noise</a></div></li>
+                        </ul>
+                    </li>	
+                    <li class="ui-menu-item"><div aria-haspopup="true" id="ui-id-65" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>Artistic</div>
+                        <ul role="menu" aria-hidden="true" aria-expanded="false" class="ui-menu ui-widget ui-widget-content ui-front" style="display: none;">
+                            <li class="ui-menu-item"><div id="ui-id-66" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/inked-filter" style="text-decoration: none; color: #000;">Inked</a></div></li>
+                            <li class="ui-menu-item"><div id="ui-id-67" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/oil-paint-filter" style="text-decoration: none; color: #000;">Oil Paint</a></div></li>
+                        </ul>
+                    </li>	
+                    <li class="ui-menu-item"><div aria-haspopup="true" id="ui-id-68" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>Pixelate</div>
+                        <ul role="menu" aria-hidden="true" aria-expanded="false" class="ui-menu ui-widget ui-widget-content ui-front" style="display: none;">
+                            <li class="ui-menu-item"><div id="ui-id-69" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/color-halftone" style="text-decoration: none; color: #000;">Color Halftone</a></div></li>
+                            <li class="ui-menu-item"><div id="ui-id-70" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/dot-screen-halftone" style="text-decoration: none; color: #000;">Dot Screen Halftone</a></div></li>
+                            <li class="ui-menu-item"><div id="ui-id-71" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/pixelate-hexagonal" style="text-decoration: none; color: #000;">Hexagonal</a></div></li>
+                        </ul>
+                    </li>	
+                    <li class="ui-menu-item"><div aria-haspopup="true" id="ui-id-72" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>Sharpen</div>
+                        <ul role="menu" aria-hidden="true" aria-expanded="false" class="ui-menu ui-widget ui-widget-content ui-front" style="display: none;">
+                            <li class="ui-menu-item"><div id="ui-id-73" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="https://www.gifgit.com/image/unsharp-mask" style="text-decoration: none; color: #000;">Unsharp Mask</a></div></li>
+                        </ul>
+                    </li>	
+                </ul>
+          </div>
+        </div>
+
+    </div>	
+    <div style="clear: both;"></div>				
+</div>					
+					<!-- end menu -->
+					
+					<!-- toolbar -->
+					<div style="background-color: #f5f5f7; padding: 6px 8px 6px 8px;">
+    <div style="float: left;">
+        <div id="quickEditorToolbar" style="border-right: 1px solid #eaeaec;">
+            <div style="padding: 0px 10px 0px 0px; border-right: 1px solid #fdfdfd;">
+                    <!-- brush tool -->
+                    <a href="https://www.gifgit.com/image/brush-tool">
+                        <img title="Brush Tool: Add color using brush strokes" style="width: 28px;" src="./Editing - (10, 7).svg_files/brush-tool-icon.svg">	
+                    </a>
+                    <!-- eraser tool -->
+                    <a href="https://www.gifgit.com/image/eraser-tool">
+                        <img title="Eraser Tool: Erase to background color or create transparency" style="width: 28px;" src="./Editing - (10, 7).svg_files/eraser-tool-icon.svg">		
+                    </a>
+                    <!-- background eraser tool -->
+                    <a href="https://www.gifgit.com/image/background-eraser-tool">
+                        <img title="Background Eraser Tool: Use color sampling to selectively erase areas" style="width: 28px;" src="./Editing - (10, 7).svg_files/background-eraser-tool-icon.svg">	
+                    </a>
+                    <!-- clone stamp tool -->
+                    <a href="https://www.gifgit.com/image/clone-stamp-tool">
+                        <img title="Clone Stamp Tool: Paint over image with other parts of image as texture" style="width: 28px;" src="./Editing - (10, 7).svg_files/clone-stamp-tool-icon.svg">
+                    </a>
+                    <!-- dodge tool -->
+                    <a href="https://www.gifgit.com/image/dodge-tool">
+                        <img title="Dodge Tool: Lighten image with a brush" style="width: 28px;" src="./Editing - (10, 7).svg_files/dodge-tool-icon.svg">
+                    </a>
+                    <!-- burn tool -->
+                    <a href="https://www.gifgit.com/image/burn-tool">
+                        <img title="Burn Tool: Darken image with a brush" style="width: 28px;" src="./Editing - (10, 7).svg_files/burn-tool-icon.svg">
+                    </a>
+                    <!-- crop tool -->
+                    <a href="https://www.gifgit.com/image/crop-tool">
+                        <img title="Crop Tool: Retreive a rectangular portion from an image" style="width: 28px;" src="./Editing - (10, 7).svg_files/crop-tool-icon.svg">
+                    </a>
+                    <!-- type tool -->
+                    <a href="https://www.gifgit.com/image/type-tool">
+                        <img title="Type Tool: Create and edit image text" style="width: 28px;" src="./Editing - (10, 7).svg_files/type-tool-icon.svg">
+                    </a>										
+                                                        
+                    <br>
+                    
+                    <!-- paint bucket tool -->
+                    <a href="https://www.gifgit.com/image/paint-bucket-tool">
+                        <img title="Paint Bucket Tool: Adds fill color by flooding pixels of similar color." style="width: 28px;" src="./Editing - (10, 7).svg_files/paint-bucket-tool-icon.svg">	
+                    </a>									
+                    <!-- magic eraser tool -->
+                    <a href="https://www.gifgit.com/image/magic-eraser-tool">
+                        <img title="Magic Eraser Tool: Erases by flooding pixels of similar color" style="width: 28px;" src="./Editing - (10, 7).svg_files/magic-eraser-tool-icon.svg">
+                    </a>
+                    <!-- gradient tool -->
+                    <a href="https://www.gifgit.com/image/gradient-tool">
+                        <img title="Gradien Tool: Fill area with color and opacity gradients" style="width: 28px;" src="./Editing - (10, 7).svg_files/gradient-tool-icon.svg">
+                    </a>									
+                    <!-- color picker tool -->
+                    <a href="https://www.gifgit.com/image/color-picker-tool">
+                        <img title="Color Picker Tool: Sample pixel color in an image " style="width: 28px;" src="./Editing - (10, 7).svg_files/color-picker-tool-icon.svg">						
+                    </a>
+                    <!-- blur tool -->
+                    <a href="https://www.gifgit.com/image/blur-tool">
+                        <img title="Blur Tool: Blurs selectively using a brush" style="width: 28px;" src="./Editing - (10, 7).svg_files/blur-tool-icon.svg">						
+                    </a>
+                    <!-- sharpen tool -->
+                    <a href="https://www.gifgit.com/image/sharpen-tool">
+                        <img title="Sharpen Tool: Sharpens selectively using a brush" style="width: 28px;" src="./Editing - (10, 7).svg_files/sharpen-tool-icon.svg">						
+                    </a>
+                    <!-- sponge tool -->
+                    <a href="https://www.gifgit.com/image/sponge-tool">
+                        <img title="Sponge Tool: Saturate or desaturate areas using brush strokes" style="width: 28px;" src="./Editing - (10, 7).svg_files/sponge-tool-icon.svg">						
+                    </a>
+            </div>
+        </div>
+    </div>
+    <div style="float: left; border-left: 1px solid #fdfdfd; padding: 0px 0px 0px 12px;">
+        <div id="selectionThumbDiv" title="No active selection" style="width: 60px; height:50px; background-color: rgb(248,248,250); border-radius: 2px; border: 1px solid #eaeaec;">
+            <img id="quickeditorSelectionThumb" src="./Editing - (10, 7).svg_files/no-selection-thumb.svg" style="width: 60px; height:50px; object-fit: contain;">
+        </div>
+        <div style="margin: 2px 0px 0px 0px;">
+            <div class="selection-dropdown">
+                <span class="selection-dropbtn"><img src="./Editing - (10, 7).svg_files/selection-dropdown-button.svg" style="cursor: pointer;"></span>
+                <div class="selection-dropdown-content">
+                    <div style="padding: 0px 0px 0px 2px;">
+                        <span style="font-size: 12px; color: #999;">Selection history</span>
+                    </div>
+                    <div id="savedSelectionsDiv">
+                        <!-- holds the selection history -->
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div style="float: left;" title="Close selection">
+                <svg onclick="quickeditorSelectionManager.removeSelection();" style="cursor: pointer;" width="12" height="12" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="12" height="12" style="fill:rgb(245,245,245)" />
+                    <line x1="1" y1="11" 
+                        x2="11" y2="1" 
+                        stroke="rgb(110, 110, 110)" 
+                        stroke-width="2"/>
+                    <line x1="1" y1="1" 
+                        x2="11" y2="11" 
+                        stroke="rgb(110, 110, 110)" 
+                        stroke-width="2"/>
+                </svg>	
+            </div>	
+            <div style="float: left;">
+            </div>
+            <div style="clear: both;"></div>
+            -->
+        </div>
+    </div>
+    <div style="float: left;">
+        <div id="quickEditorSelectionToolbar" style="border-right: 1px solid #eaeaec;">
+            <div style="padding: 0px 10px 0px 0px; border-right: 1px solid #fdfdfd;">
+                <!-- rectangular marquee tool -->
+                <a href="https://www.gifgit.com/image/rectangular-marquee-tool">
+                    <img title="Rectangular Marquee Tool: Create rectangular selections" style="width: 28px;" src="./Editing - (10, 7).svg_files/rectangular-marquee-tool-icon.svg">
+                </a>							
+                <!-- lasso tool -->
+                <a href="https://www.gifgit.com/image/lasso-tool">
+                    <img title="Lasso Tool: Create hand drawn selection" style="width: 28px;" src="./Editing - (10, 7).svg_files/lasso-tool-icon.svg">
+                </a>
+                <!-- magic wand tool -->
+                <a href="https://www.gifgit.com/image/magic-wand-tool">
+                    <img title="Magic Wand Tool: Select area based on color similarity" style="width: 28px;" src="./Editing - (10, 7).svg_files/magic-wand-tool-icon.svg">
+                </a>
+                
+                <br>
+                
+                <!-- polygon lasso tool -->
+                <a href="https://www.gifgit.com/image/polygon-lasso-tool">
+                    <img title="Polygon Lasso Tool: Create straight edged selection" style="width: 28px;" src="./Editing - (10, 7).svg_files/polygon-lasso-tool-icon.svg">
+                </a>							
+                <!-- elliptical marquee tool -->
+                <a href="https://www.gifgit.com/image/elliptical-marquee-tool">
+                    <img title="Elliptical Marquee Tool: Create circular/elliptical selections" style="width: 28px;" src="./Editing - (10, 7).svg_files/elliptical-marquee-tool-icon.svg">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div style="float: left;">
+        <div id="quickEditorDrawingToolbar" style="border-left: 1px solid #fdfdfd; padding: 0px 0px 0px 12px;">
+            <!-- rectangle tool -->
+            <a href="https://www.gifgit.com/image/rectangle-tool">
+                <img title="Rectangle Tool: Draw rectangular shapes" alt="r" style="width: 28px;" src="./Editing - (10, 7).svg_files/rectangle-tool-icon.svg">	
+            </a>
+            
+            <!-- line tool -->
+            <a href="https://www.gifgit.com/image/line-tool">
+                <img title="Line Tool: Draw straight lines" alt="l" style="width: 28px;" src="./Editing - (10, 7).svg_files/line-tool-icon.svg">	
+            </a>
+
+            <!-- pen tool -->
+            <a href="https://www.gifgit.com/image/pen-tool">
+                <img title="Pen Tool: Creates smooth curves and paths" alt="l" style="width: 28px;" src="./Editing - (10, 7).svg_files/pen-tool-icon.svg">	
+            </a>								
+            
+            <br>
+            
+            <!-- ellipse tool -->
+            <a href="https://www.gifgit.com/image/ellipse-tool">
+                <img title="Ellipse Tool: Draw elliptical or circular shapes" alt="e" style="width: 28px;" src="./Editing - (10, 7).svg_files/ellipse-tool-icon.svg">	
+            </a>
+            
+            <!-- polygon tool -->
+            <a href="https://www.gifgit.com/image/polygon-tool">
+                <img title="Polygon Tool: Draw polygonal shapes" alt="l" style="width: 28px;" src="./Editing - (10, 7).svg_files/polygon-tool-icon.svg">	
+            </a>	
+                                    
+        </div>						
+    </div>
+    <div style="float: right; padding: 0px 10px 0px 0px;">
+        <!--
+        <div style="float: left; padding: 8px 8px 0px 0px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="42" version="1.1">
+
+                <rect id="foregroundColorMenuView" x="22" y="0" title="Foreground Color" width="22" height="20" fill="black" stroke="rgb(180,180,180)" style="cursor: pointer;" onclick="quickeditorColorManager.setColorSet('foreground_color')" />
+                
+                <rect id="backgroundColorMenuView" x="22" y="22" width="22" height="20" fill="white" stroke="rgb(180,180,180)" style="cursor: pointer;" onclick="quickeditorColorManager.setColorSet('background_color')" />
+                
+                <rect onclick="quickeditorColorManager.setDefaultColors()" x="8" y="30" width="8" height="8" fill="white" stroke="rgb(200,200,200)" style="cursor: pointer;" />
+                <rect onclick="quickeditorColorManager.setDefaultColors()" x="4" y="26" width="8" height="8" fill="black" stroke="rgb(200,200,200)" style="cursor: pointer;" />
+            </svg>						
+        </div>
+        -->
+        <div style="float: left; padding: 4px 10px 0px 0px;">
+            <table cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                    <td>
+                    </td>
+                    <td>
+                        <!-- foreground swatch -->
+                        <div title="Foreground color" style="cursor: pointer;">
+                            <div style="position: relative;">
+                                <svg width="25" height="25">
+                                <rect id="foregroundColorMenuView" width="25" height="25" style="fill:rgb(0,0,0);stroke-width:3;stroke:rgb(0,0,0)" onclick="quickeditorColorManager.setColorSet(&#39;foreground_color&#39;)"></rect>
+                                </svg>
+                                <!-- 
+                                    foregroundColorUpdateView 
+                                    Shows the updated color in the color picker hovering over the color picker
+                                    rainbow icon so as to not change the background or foreground color unitl the user clicks
+                                    the 'Choose' button.
+                                -->
+                                <div style="z-index: 1000px; pointer-events: none; position: absolute; top: 0px;right: 0px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" version="1.1">
+                                        <rect id="foregroundColorUpdateView" x="0" y="0" width="25" height="25" style="fill:rgba(0,0,0,0);stroke-width:3;stroke:rgba(0,0,0,0)"></rect>
+                                    </svg>
+                                </div>
+                                                            
+                            </div>										
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <svg width="25" height="25">
+                            <rect onclick="quickeditorColorManager.setDefaultColors()" x="8" y="4" width="8" height="8" fill="white" stroke="rgb(200,200,200)" style="cursor: pointer;"></rect>
+                            <rect onclick="quickeditorColorManager.setDefaultColors()" x="4" y="0" width="8" height="8" fill="black" stroke="rgb(200,200,200)" style="cursor: pointer;"></rect>
+                        </svg>
+                    </td>
+                    <td>
+                        <!-- background swatch -->
+                        <div title="Background color" style="cursor: pointer;">
+                            <div style="position: relative;">
+                                <svg width="25" height="25">
+                                <rect id="backgroundColorMenuView" width="25" height="25" style="fill: rgb(255, 255, 255); stroke-width: 3; stroke: rgb(180, 180, 180);" onclick="quickeditorColorManager.setColorSet(&#39;background_color&#39;)"></rect>
+                                </svg>
+                                <!-- 
+                                    foregroundColorUpdateView 
+                                    Shows the updated color in the color picker hovering over the color picker
+                                    rainbow icon so as to not change the background or foreground color unitl the user clicks
+                                    the 'Choose' button.
+                                -->
+                                <div style="z-index: 1000px; pointer-events: none; position: absolute; top: 0px;right: 0px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" version="1.1">
+                                        <rect id="backgroundColorUpdateView" x="0" y="0" width="25" height="25" style="fill:rgba(0,0,0,0);stroke-width:3;stroke:rgba(0,0,0,0)"></rect>
+                                    </svg>
+                                </div>
+                                                            
+                            </div>												
+                        </div>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div id="colorSwatchDiv" style="float: left; padding: 0px 8px 0px 0px;">
+            <input type="text" id="toolbarColorSwatch" style="z-index: 900; display: none;"><div class="sp-container sp-light sp-flat sp-input-disabled sp-palette-buttons-disabled sp-palette-only sp-initial-disabled"><div class="sp-palette-container"><div class="sp-palette sp-thumb sp-cf"><div class="sp-cf sp-palette-row sp-palette-row-0"><span title="rgb(0, 0, 0)" data-color="rgb(0, 0, 0)" class="sp-thumb-el sp-thumb-dark sp-thumb-active"><span class="sp-thumb-inner" style="background-color:rgb(0, 0, 0);"></span></span><span title="rgb(127, 127, 127)" data-color="rgb(127, 127, 127)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(127, 127, 127);"></span></span><span title="rgb(136, 0, 21)" data-color="rgb(136, 0, 21)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(136, 0, 21);"></span></span><span title="rgb(227, 28, 36)" data-color="rgb(227, 28, 36)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(227, 28, 36);"></span></span><span title="rgb(255, 127, 39)" data-color="rgb(255, 127, 39)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(255, 127, 39);"></span></span><span title="rgb(255, 242, 0)" data-color="rgb(255, 242, 0)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(255, 242, 0);"></span></span><span title="rgb(34, 177, 76)" data-color="rgb(34, 177, 76)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(34, 177, 76);"></span></span><span title="rgb(0, 162, 232)" data-color="rgb(0, 162, 232)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(0, 162, 232);"></span></span><span title="rgb(63, 72, 204)" data-color="rgb(63, 72, 204)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(63, 72, 204);"></span></span><span title="rgb(163, 73, 164)" data-color="rgb(163, 73, 164)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(163, 73, 164);"></span></span></div><div class="sp-cf sp-palette-row sp-palette-row-1"><span title="rgb(255, 255, 255)" data-color="rgb(255, 255, 255)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(255, 255, 255);"></span></span><span title="rgb(195, 195, 195)" data-color="rgb(195, 195, 195)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(195, 195, 195);"></span></span><span title="rgb(185, 122, 87)" data-color="rgb(185, 122, 87)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(185, 122, 87);"></span></span><span title="rgb(255, 174, 201)" data-color="rgb(255, 174, 201)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(255, 174, 201);"></span></span><span title="rgb(255, 201, 14)" data-color="rgb(255, 201, 14)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(255, 201, 14);"></span></span><span title="rgb(239, 228, 76)" data-color="rgb(239, 228, 76)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(239, 228, 76);"></span></span><span title="rgb(181, 230, 29)" data-color="rgb(181, 230, 29)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(181, 230, 29);"></span></span><span title="rgb(153, 217, 234)" data-color="rgb(153, 217, 234)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(153, 217, 234);"></span></span><span title="rgb(112, 146, 190)" data-color="rgb(112, 146, 190)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(112, 146, 190);"></span></span><span title="rgb(200, 191, 231)" data-color="rgb(200, 191, 231)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(200, 191, 231);"></span></span></div><div class="sp-cf sp-palette-row sp-palette-row-selection"></div></div><div class="sp-palette-button-container sp-cf"><button type="button" class="sp-palette-toggle">more</button></div></div><div class="sp-picker-container"><div class="sp-top sp-cf"><div class="sp-fill"></div><div class="sp-top-inner"><div class="sp-color" style="background-color: rgb(255, 0, 0);"><div class="sp-sat"><div class="sp-val"><div class="sp-dragger" style="top: -5px; left: -5px;"></div></div></div></div><div class="sp-clear sp-clear-display" title="Clear Color Selection" style="display: none;"></div><div class="sp-hue"><div class="sp-slider" style="top: -3px;"></div></div></div><div class="sp-alpha" style=""><div class="sp-alpha-inner"><div class="sp-alpha-handle" style="left: -3px;"></div></div></div></div><div class="sp-input-container sp-cf"><input class="sp-input" type="text" spellcheck="false"></div><div class="sp-initial sp-thumb sp-cf"></div><div class="sp-button-container sp-cf"><a class="sp-cancel" href="https://www.gifgit.com/image/brush-tool#">cancel</a><button type="button" class="sp-choose">choose</button></div></div></div>
+        </div>	
+        <div style="float: left; padding: 14px 8px 0px 0px;">
+            <div class="color-picker-dropdown">
+                <div class="color-picker-dropbtn">
+                    <img style="cursor: pointer;" onmouseenter="quickeditorColorManager.hideColorSwatch();" onmouseleave="quickeditorColorManager.showColorSwatch();" src="./Editing - (10, 7).svg_files/color-picker-icon.jpg">
+                </div>
+                <div class="color-picker-dropdown-content" onmouseup="quickeditorColorManager.updateEditorColors()" onmouseenter="quickeditorColorManager.hideColorSwatch();" onmouseleave="quickeditorColorManager.showColorSwatch();">
+                    <input type="text" id="quickEditorColorPicker" style="display: none;"><div class="sp-container sp-light sp-flat sp-palette-buttons-disabled sp-palette-disabled sp-initial-disabled"><div class="sp-palette-container"><div class="sp-palette sp-thumb sp-cf"></div><div class="sp-palette-button-container sp-cf"><button type="button" class="sp-palette-toggle">less</button></div></div><div class="sp-picker-container"><div class="sp-top sp-cf"><div class="sp-fill"></div><div class="sp-top-inner"><div class="sp-color" style="background-color: rgb(255, 0, 0);"><div class="sp-sat"><div class="sp-val"><div class="sp-dragger" style="top: -5px; left: -5px;"></div></div></div></div><div class="sp-clear sp-clear-display" title="Clear Color Selection" style="display: none;"></div><div class="sp-hue"><div class="sp-slider" style="top: -3px;"></div></div></div><div class="sp-alpha" style=""><div class="sp-alpha-inner"><div class="sp-alpha-handle" style="left: -3px;"></div></div></div></div><div class="sp-input-container sp-cf"><input class="sp-input" type="text" spellcheck="false"></div><div class="sp-initial sp-thumb sp-cf"></div><div class="sp-button-container sp-cf"><a class="sp-cancel" href="https://www.gifgit.com/image/brush-tool#">cancel</a><button type="button" class="sp-choose">choose</button></div></div></div>
+                </div>
+            </div>
+        </div>					
+        <div style="float: left; padding: 4px 0px 0px 0px;">
+            <table cellspacing="0" cellpadding="0" style="padding: 0px;">
+                <tbody><tr>
+                    <td align="left">
+                        <input type="checkbox" id="transparentBkgndChk" checked="" title="Set background transparent">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <img title="Set transparent background " style="border: 1px solid rgb(180, 180, 180);" src="./Editing - (10, 7).svg_files/transparent-tile-light.jpg">
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <!--
+    <div style="float: right;">
+        <img src="/468x60.gif">
+    </div>
+    -->
+    <div style="clear: both;"></div>
+</div>	
+					<!-- end toolbar -->			
+					
+					<div style="text-align: left; user-select: none; background-color: #f5f5f7; border-radius: 4px; border: 1px solid #eaeaec;">
+						<div style="border-top: 1px solid #fcfcfc; padding: 5px 16px 0px 4px; border-radius: 3px;" data-np-autofill-form-type="other" data-np-checked="1" data-np-watching="1">
+							<div style="float: left;">
+								<img src="./Editing - (10, 7).svg_files/brush-tool-icon.svg">	
+							</div>
+							<div id="eraserToolOptions" class="tool-option" style="float: left; padding: 6px;">
+								<span style="display: none;"><input type="text" id="foregroundColorInput" value="#000000" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(0, 0, 0);"></div></div><div class="sp-dd">▼</div></div></span>
+								Size: <input type="number" id="brushSizeInput" value="12" min="1" max="200" style="width: 40px;" data-np-intersection-state="visible">
+								Blur: <input type="number" id="brushBlurInput" value="0" max="100" min="0" style="width: 38px;" data-np-intersection-state="visible">
+								Opacity: <input type="number" id="brushAlphaInput" value="100" max="100" style="width: 40px;" data-np-intersection-state="visible">
+								Blend Mode:
+								<select id="brushBlendingModeInput">
+								  <option value="source-over">Normal</option>
+								  <option value="lighter">Lighter</option>
+								  <option value="multiply">Multiply</option>
+								  <option value="screen">Screen</option>
+								  <option value="overlay">Overlay</option>
+								  <option value="darken">Darken</option>
+								  <option value="lighten">Lighten</option>
+								  <option value="color-dodge">Color Dodge</option>
+								  <option value="color-burn">Color Burn</option>
+								  <option value="hard-light">Hard Light</option>
+								  <option value="soft-light">Soft Light</option>
+								  <option value="difference">Difference</option>
+								  <option value="exclusion">Exclusion</option>
+								  <option value="hue">Hue</option>
+								  <option value="saturation">Saturation</option>
+								  <option value="color">Color</option>
+								  <option value="luminosity">Luminosity</option>
+								</select>
+							</div>	
+							<div style="float: right;">
+								<table>
+    <tbody><tr>
+        <td>
+            <svg id="undoBtn" style="cursor: pointer; opacity: 1;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"></path></svg>
+        </td>
+        <td>
+            <svg id="redoBtn" style="cursor: pointer; opacity: 0.3;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M18.4 10.6C16.55 8.99 14.15 8 11.5 8c-4.65 0-8.58 3.03-9.96 7.22L3.9 16c1.05-3.19 4.05-5.5 7.6-5.5 1.95 0 3.73.72 5.12 1.88L13 16h9V7l-3.6 3.6z"></path></svg>
+        </td>
+        <td>
+            &nbsp;|&nbsp;
+        </td>
+        <td>
+            <img id="downloadImageBtn" title="Download image" onclick="quickeditorEditorManager.exporter.showDownload();" src="./Editing - (10, 7).svg_files/download-black-24dp.svg">
+        </td>
+        <td id="tool_option_menu_save_div" style="display: block">
+            <img id="tooloptionsSaveBtn" class="tool_option_save_btn_enabled" title="Save image edits" onclick="quickeditorEditorManager.saveProject();" src="./Editing - (10, 7).svg_files/save-black-24dp.svg">
+        </td>
+        <td style="display: table-cell;">
+            <span id="closeEditBtn" onclick="quickeditorEditorManager.closeFile();">
+                <!-- New files -->
+                ✕
+            </span>   
+        </td>
+    </tr>
+</tbody></table>							</div>
+							<div style="clear: both;"></div>
+						</div>
+					</div>	
+				</div>
+				
+				<div id="editorbox" style="display: block; margin: 0px 0px 20px;">		
+
+					<div id="workspaceContainerDiv" style="padding: 50px 20px; background-color: rgb(234, 234, 234); margin: auto; width: 2048px; height: 2048px;">
+						<div id="editorDiv" style="margin: auto; position: relative; background-image: url(&quot;/site-images/transparent-tile-light.jpg&quot;); box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px; background-color: transparent; width: 2048px; height: 2048px;">
+							<canvas id="editorCanvas" width="2048" height="2048"></canvas>
+							<!-- use below to put the strokes canvas directly over the image for testing and viewing -->
+							<!-- <canvas id="eraserCanvas" style="z-index: 99; pointer-events: none; position: absolute; top: 0px; left: 0px;"></canvas> -->
+							<!-- copy/cut paste canvas -->
+							<canvas id="pasteCanvas" style="display: none; z-index: 89; pointer-events: auto; position: absolute; top: 0px; left: 0px;" width="2048" height="2048"></canvas>	
+							<!-- canvas for tool graphics -->					
+							<canvas id="toolDrawCanvas" style="cursor: crosshair; z-index: 100; pointer-events: none; position: absolute; top: 0px; left: 0px;" width="2048" height="2048"></canvas>
+							<canvas id="selectionCanvas" style="pointer-events: none; z-index: 90;position: absolute; top: 0px; left: 0px;" width="2048" height="2048"></canvas>					
+						</div>
+						
+						<div style="display: none;">
+							<!-- general stroke holding canvas -->
+							<canvas id="eraserCanvas" width="2048" height="2048"></canvas>
+							<br>
+							<canvas id="clippingCanvas" width="2048" height="2048"></canvas>	
+						</div>
+					</div>
+
+					<div style="display: none;">
+						<canvas id="toolProfileCanvas" width="1" height="1"></canvas>				
+					</div>					
+				
+				</div>
+				
+				<div id="editHistoryDiv" style="display: none; background-color: #ccc;">
+					
+				</div>
+
+			</div><div class="google-auto-placed" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-3410459897674191" data-adsbygoogle-status="done" style="display: block; margin: 10px auto; background-color: transparent; height: 280px;" data-ad-status="filled"><div id="aswift_4_host" style="border: none; height: 280px; width: 1200px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;"><iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="left:0;position:absolute;top:0;border:0;width:1200px;height:280px;min-height:auto;max-height:none;min-width:auto;max-width:none;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1200" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="./Editing - (10, 7).svg_files/ads(1).html" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CNudnIyb7Y0DFWWCUAYdks88ug" data-load-complete="true"></iframe></div></ins></div><!-- end toolpageEditorDiv -->
+			
+			<!-- @inpage_background_manager-template -->
+			<div class="tool-summary">
+    <div id="backgroundServerContentDiv" style="display: none;">
+        <div class="tool-summary">
+            <div style="padding: 15px;">
+                <!--
+                <div style="text-align: center;">
+                    <h2>
+                        Editor Manager
+                    </h2>
+                </div>
+                -->
+                <div style="text-align: center; margin: 0px 0px 30px 0px;">
+                    <span style="font-weight: bold; font-size: 17px;">
+                        <a id="popupBlockedLink" href="https://www.gifgit.com/image/brush-tool" target="_blank">Click Here</a> to open the editor if stopped by popup blocker.
+                    </span>	
+                    <br>
+                    <a id="popupBlockedLinkBtn" href="https://www.gifgit.com/image/brush-tool" target="_blank">
+                        Launch Editor
+                    </a>
+                </div>
+                <div style="background-color: #f5f5f7; padding: 4px 10px; border: 1px solid #efefef;">
+                    <span style="font-size: 13px;">
+                        *Nb. <u>This page is needed</u> for the online editor. <u>Do not close</u> while editing.
+                    </span>						
+                </div>
+                <div style="margin: 16px 0px 0px 0px;">
+                    <p>
+                        If the editor launch was blocked by your browser consider adding gifgit.com to your browser safe popup list.
+                    </p>
+                    <p>
+                        <span style="font-size: 15px; font-weight: bold;">Chrome</span>
+                        <br>
+                        </p><ol type="1" style="line-height: 28px;">
+                            <li>Click the <span style="font-weight: bold; font-size: 15px;">
+                                Customize and control Google Chrome</span> menu. (<span style="font-weight: bold; font-size: 18px;">⋮</span> button at top right of browser). 
+                            </li>
+                            <li>
+                                Click <span style="font-weight: bold; font-size: 15px;">Settings</span>.
+                            </li>
+                            <li>
+                                Expand the <span style="font-weight: bold; font-size: 15px;">Advanced</span> menu then select the
+                                <span style="font-weight: bold; font-size: 15px;">Privacy and Security</span> in the sidebar.
+                            </li>
+                            <li>
+                                Click <span style="font-weight: bold; font-size: 15px;">Site Settings</span> then 
+                                <span style="font-weight: bold; font-size: 15px;">Pop-ups and redirects</span>.
+                            </li>
+                            <li>
+                                Under <span style="font-weight: bold; font-size: 15px;">Allow</span> click the
+                                <span style="font-weight: bold; font-size: 15px;">Add</span> button.
+                            </li>								
+                            <li>
+                                Enter <i>gifgit.com</i> in the dialog and press <span style="font-weight: bold; font-size: 15px;">Add</span>.
+                            </li>
+                        </ol>
+                    <p></p>
+                </div>
+                <!-- background editor controls -->
+                <div style="display: none;"> <!-- added because wasn't hiding-->
+                    <div style="display: none;">
+                        <div id="imageHistoryArrayDiv"></div>
+                        <br>
+                        <div id="toolUsedImageIndexArrayDiv">
+                            
+                        </div>
+                        <br>
+                        <div id="selectionHistoryArrayDiv">
+                            <!-- <img src="/site-images/quick-editor/selection-image.png" style="width: 100px;"> -->
+                        </div>
+                        <div id="selectionPaletteDiv">
+                            
+                        </div>	
+                        <div>
+                            edit index: <input id="editIndexTxt" type="number" value="0"> | selection index: <input id="selectionIndexTxt" type="number" value="0">	 deselected <input type="checkbox" id="selectionDeselectedChk" value="selection">	
+                            filename: <input type="text" id="loadedFilenameTxt" value=""> project I.D. <input type="text" id="loadedProjectID">
+                            loaded image mime <input type="text" id="loadedImageMIMETxt">
+                            sent image: <input type="text" id="sentImageDataTxt" value="">
+                        </div>
+                        Rendered File:
+                        <br>
+                        <canvas id="renderCanvas"></canvas>
+                        <br>
+                        Output file of project:
+                        <br>
+                        <img id="outputImage">
+                        <br>
+                        <canvas id="testCanvas"></canvas>
+                        <div>
+                            <img id="clipboardImage" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAADElEQVQImWNgoBMAAABpAAFEI8ARAAAAAElFTkSuQmCC" alt="clipboard" style="width: 100px;">
+                        </div>
+                        <div>
+                            <!-- for some reason the textarea gave problems on the magic wand tool page -->
+                            <!-- <textarea id="editStackJSONText" rows="4" cols="50"> -->
+                            <input type="text" id="editStackJSONText">
+                        </div>							
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>			<!-- @inpage_background_manager-template-end -->
+			
+			<!-- @ad_unit_below_editor-container-template --><div class="ad_unit_below_editor-container"> <div class="ad_unit_below_editor" style="height: 0px;"> <script async="" src="./Editing - (10, 7).svg_files/f(8).txt"></script> <!-- gifgit-responsive-horizontal --> <ins class="adsbygoogle ad_unit_below_editor" style="display: inline-block; width: 728px; height: 0px;" data-ad-client="ca-pub-3410459897674191" data-ad-slot="5748992224" data-adsbygoogle-status="done" data-ad-status="unfilled"><div id="aswift_1_host" style="border: none; height: 0px; width: 728px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: hidden; opacity: 0;"><iframe id="aswift_1" name="aswift_1" browsingtopics="true" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 728px; height: 0px; min-height: auto; max-height: none; min-width: auto; max-width: none;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="0" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="./Editing - (10, 7).svg_files/ads(2).html" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CM-SyYub7Y0DFQ-VUAYdppsaIw" data-load-complete="true"></iframe></div></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script> </div> </div><!-- @ad_unit_below_editor-container-template-end -->
+			
+			<div id="toolpageContentDiv" style="height: auto !important;">		
+		
+				<section style="text-align: center; margin: 50px 0px 0px 0px;">	
+
+					<div style="text-align: center;">
+						<h2>
+							About the Brush Tool
+						</h2>
+					</div>		
+					
+					<div class="tool-summary">
+						Paint color into your image using the online brush tool available in the free online image and photo editor at gifgit.com.
+						Upload or use a sample image to try the brush tool.	
+					</div>
+					
+					<!-- responsive https://www.w3schools.com/css/css_rwd_images.asp -->
+					<img src="./Editing - (10, 7).svg_files/brush-tool-example1.jpg" style="max-width: 95%; height: auto;" alt="Brush tool main example">	
+
+				</section><div class="google-auto-placed" style="width: 100%; height: auto; clear: none; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-3410459897674191" data-adsbygoogle-status="done" style="display: block; margin: 10px auto; background-color: transparent; height: 0px;" data-ad-status="unfilled"><div id="aswift_5_host" style="border: none; height: 0px; width: 1200px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: hidden; opacity: 0;"><iframe id="aswift_5" name="aswift_5" browsingtopics="true" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 1200px; height: 0px; min-height: auto; max-height: none; min-width: auto; max-width: none;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1200" height="0" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="./Editing - (10, 7).svg_files/ads(3).html" data-google-container-id="a!6" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJrUnIyb7Y0DFVGfUAYd4AYZtg" data-load-complete="true"></iframe></div></ins></div>
+				
+				<!--
+				<section style="text-align: center; padding: 25px 0px;">
+					<span id="uploadBtn" style="cursor: pointer; font-family: arial; color: #fff; font-weight: bold; background-color: rgb(0,122,255); padding: 10px 16px; border-radius: 4px;">
+						UPLOAD
+					</span>
+					<input style="display: none;" type="file" id="fileinput" accept="image/*" style="border: 0px solid #cccccc;">			
+				</section>
+				-->
+				
+				<section>
+					<div style="text-align: center;">
+						<h2>
+							Using the Online Brush Tool
+						</h2>
+					</div>
+					<div class="tool-summary">
+						<ul style="line-height: 28px;">
+						  <li>Upload an image using the form above.</li>
+						  <li>Brush in the image to add color to the image using the brush strokes.</li>
+						  <li>Adjust the settings in the tool options bar to set the size of the brush tool, its' hardness, opacity and blend mode.</li>
+						</ul>
+					</div>		
+				</section>
+				
+				<section>
+					<div style="text-align: center;">
+						<h2>
+							Feature Rich Online Image Editor
+						</h2>
+					</div>
+					<div class="tool-summary">
+						Online photo editing with layers, layer masks, a workflow and user interface like a traditional desktop photo editor that provides you with the toolset and 
+						features to professionally edit your images. No need to download or use desktop software like Microsoft Paint, Photoshop or GIMP to do quick edits. Edit your images online 
+						with the best online image editor.
+					</div>
+					<table id="table-comparison">
+						<tbody><tr>
+							<th>
+								Features
+							</th>
+							<th>
+								Gifgit Editor
+							</th>
+							<th>
+								Lunapic
+							</th>
+						</tr>
+						<tr>
+							<td>
+								Browser based editing (No software download)
+							</td>
+							<td>
+								Yes
+							</td>
+							<td>
+								Yes
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Layers
+							</td>
+							<td>
+								Yes
+							</td>
+							<td>
+								No
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Layer Masks (Non-Destructive Editing)
+							</td>
+							<td>
+								Yes
+							</td>
+							<td>
+								No
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Selection tools
+							</td>
+							<td>
+								Yes
+							</td>
+							<td>
+								No
+							</td>
+						</tr>				
+						<tr>
+							<td>
+								Undo History List
+							</td>
+							<td>
+								Yes
+							</td>
+							<td>
+								No
+							</td>
+						</tr>
+					</tbody></table>
+				</section>
+				
+				<section style="padding: 25px 0px; text-align: center;">
+					Export Formats Supported: JPEG, PNG
+				</section>
+				
+				<section style="padding: 25px 0px 0px 0px;">
+					<div class="tool-summary">
+						<div style="float: left;">
+							<!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none -->
+							<ul style="list-style-type:none; padding-left: 2;">
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/crop-tool">Crop image online</a>							  
+							  </li>
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/background-eraser-tool">Background eraser</a>							  
+							  </li>
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/tutorial/create-circular-image-online">Create circular image</a>							  
+							  </li>
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/flip-image">Flip image online</a>							  
+							  </li>
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/rotate-image">Rotate image online</a>							  
+							  </li>
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/lasso-tool">Lasso</a>							  
+							  </li>
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/user-guide/tools">Tools List...</a>							  
+							  </li>
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/text/generator">Text Generator</a>							  
+							  </li>
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/fonts">Fonts</a>							  
+							  </li>
+							</ul>   							
+						</div>	
+						<div style="float: left;">
+							<!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none -->
+							<ul style="list-style-type:none; padding-left: 2;">
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/adjust-image-brightness">Change brightness</a>							  
+							  </li>
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/adjust-image-contrast">Adjust contrast</a>							  
+							  </li>
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/grayscale-image">Create grayscale</a>							  
+							  </li>
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/adjust-image-saturation">Saturate/desaturate image</a>							  
+							  </li>
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/apply-duotone-effect">Duotone</a>							  
+							  </li>	
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/invert-image-colors">Invert colors</a>							  
+							  </li>	
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/adjust-image-hue">Hue</a>							  
+							  </li>	
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/apply-sepia">Sepia</a>							  
+							  </li>	
+
+							</ul>  								
+						
+						</div>							
+						<div style="float: left;">
+							<!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none -->
+							<ul style="list-style-type:none; padding-left: 2;">
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/dot-screen-halftone">Dot Screen Halftone</a>							  
+							  </li>
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/spherize-image">Spherize Image</a>							  
+							  </li>
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/add-vignette-effect">Add Vignette</a>							  
+							  </li>
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/tilt-shift-blur-filter">Tilt Shift</a>							  
+							  </li>						  
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/image/zoom-blur-filter">Zoom Blur</a>							  
+							  </li>	
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/gif/animated-gif-maker">Create a GIF</a>							  
+							  </li>	
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/gif/video-to-gif">Video to GIF</a>							  
+							  </li>					  
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/gif/crop">Crop a GIF</a>							  
+							  </li>	
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/gif/resize">Resize GIF</a>							  
+							  </li>	
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/gif/add-text-to-gif">Add Text to GIF</a>							  
+							  </li>		
+							  <li>
+									<a style="font-size: 14px; color: rgb(80, 80, 80);" href="https://www.gifgit.com/meme/generator">Meme Generator</a>							  						  
+							  </li>	
+							</ul>   							
+						
+						</div>
+						<div style="clear: both;"></div>
+					</div>		
+				</section>
+			
+			</div><!-- end toolpageContentDiv -->
+				
+			<section style="display: block;">
+				<!-- @ad_unit_footer-template --><div class="ad_unit_footer"></div><!-- @ad_unit_footer-template-end -->
+			</section>
+			
+			<footer>
+				<div class="tool-summary">
+					<div style="float: left;">
+						<span style="font-size: 12px;">
+							Copyright © 2018 - 2025 Gifgit.com Free Online Image Editor, All Rights Reserved. 
+						</span>
+					</div>
+					<div style="float: right;">
+						<a style="color: #6b6b6b; font-size: 12px; text-decoration: none; padding: 0px 0px 0px 12px;" href="https://www.gifgit.com/about">About</a>
+						<a style="color: #6b6b6b; font-size: 12px; text-decoration: none; padding: 0px 0px 0px 12px;" href="https://www.gifgit.com/privacy">Privacy Policy</a>
+						<a style="color: #6b6b6b; font-size: 12px; text-decoration: none; padding: 0px 0px 0px 12px;" href="https://www.gifgit.com/terms">Terms</a>							
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+			</footer>
+			
+		</div><!-- end main -->
+		
+		
+		<!-- Panel Sidebar Controls -->
+		<div id="floatingSidebarToolbar" style="top: 93px;">
+			<!-- history -->
+			<div title="History" onclick="quickEditorPanelsSidebarManager.openSidebar(&#39;history&#39;);">
+				<img style="cursor: pointer; opacity: 0.75;" src="./Editing - (10, 7).svg_files/sidebar-toolbar-history-icon.png">	
+			</div>		
+			<!-- channels -->
+			<div title="Channels" onclick="quickEditorPanelsSidebarManager.openSidebar(&#39;channels&#39;);">
+				<img style="cursor: pointer; opacity: 0.75;" src="./Editing - (10, 7).svg_files/sidebar-toolbar-channels-icon.png">	
+			</div>			
+			<!-- histogram -->			
+			<div title="Histogram" onclick="quickEditorPanelsSidebarManager.openSidebar(&#39;histogram&#39;);">
+				<img style="cursor: pointer; opacity: 0.75;" src="./Editing - (10, 7).svg_files/sidebar-toolbar-histogram-icon.png">	
+			</div>
+		</div>
+		
+		<div id="editorPanelsSidebar" class="sidenav">
+		
+			<div id="sidebarPanelsContainer">
+			
+				<div id="sidebarPanelsContainerHeader">
+					<div style="float: left;">
+						<select id="sidebarPanelsSelect">
+							<!--
+							<option value="channels">Channels</option>
+							<option value="history" selected>History</option>
+							<option value="histogram">Histogram</option>
+							-->
+						<option value="channels">Channels</option><option value="history">History</option><option value="histogram">Histogram</option></select>				
+					</div>
+					<div style="float:  right;">
+						<span class="closebtn" onclick="quickEditorPanelsSidebarManager.closeSidebar();">✖</span>					
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+				
+				<div id="sidebarPanelsContainerBody">
+					<!-- Holds the sidebar content -->
+				</div>
+				
+			</div>
+			<div id="sidebarPanelAdsContainer" style="position: absolute; bottom: 0px; left: 0px; width: 280px;">
+				<!-- <img src="/250x250-ad.jpg"> -->
+				<svg width="200" height="200"><rect width="200" height="200" style="fill:rgb(240,240,240);"></rect>Sorry, your browser does not support inline SVG.</svg>
+			</div>
+		</div>
+		<!-- End of Panel Sidebar Controls -->
+		
+		<!-- Snackbar popup -->
+		<div id="snackbar">Some text some message..</div>
+
+		<!-- Download modal popup -->
+		<!-- The Modal -->
+<div id="toolpreviewEditorExportModal" class="toolpreview-editor-export-modal">
+
+    <div class="toolpreview-editor-export-modal-content-container">
+        <!-- Modal content -->
+        <div class="toolpreview-editor-export-modal-content">
+
+            <div id="toolpreviewEditorExportCookieRequiredContent" style="text-align: center; margin: 0px 0px 30px 0px;">
+                <h2>Enable Cookies!</h2>
+                You must enable cookies to save images. Please read about our use of <a target="_blank" href="http://www.localhost/privacy#cookies">cookies</a>.
+            </div>
+
+            <div id="toolpreviewEditorExportCountdownContent" style="text-align: center;">
+                <span style="display: inline-block; margin: 0px 0px 10px 0px; font-weight: bold; color: #555; font-size: 20px;">
+                    You can save in...
+                </span>
+                <div id="countdownTimer"></div>
+            </div>
+
+            <div id="toolpreviewEditorExportUIContent">
+
+                <div style="position: relative;">
+                    <div style="float: left;">
+                    </div>
+                    <div style="float: right;">
+                        <span class="toolpreview-editor-export-close">✕</span>
+                    </div>
+                    <div style="clear: both;"></div>
+    
+                    <span id="toolpreviewEditorExporterHeaderTitle" class="toolpreview-editor-export-modal-header-title">
+                        Download Image
+                    </span>
+    
+                </div>
+    
+                <div style="margin: 10px 0px 0px 0px;">
+                    <div style="float: left;">
+                        <div>
+                            <!-- download preview image -->
+                            <img id="toolpreviewEditorDownloadPreviewImage">
+                        </div>
+                        <div>
+                            <div style="float: left;">
+                                <span id="toolpreviewEditorDownloadInfoLabel" style="font-size: 12px; color: #777;"></span>
+                            </div>
+                            <div style="float: right;">
+                            </div>
+                            <div style="clear: both;"></div>
+                        </div>
+                    </div>
+                    <div style="float: right;">
+                        <table class="toolpreview-editor-export-settings-table">
+                            <tbody><tr>
+                                <td colspan="2">
+                                    <input type="text" id="downloadFileName" placeholder="Enter file name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Format:</td>
+                                <td>
+                                    <select id="downloadFormatSelect">
+                                        <option value="image/png" selected="">PNG</option>
+                                        <option value="image/jpeg">JPG</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-bottom: 0px;">
+                                    Background:
+                                </td>
+                                <td style="padding-bottom: 0px;">
+    
+                                    <!-- transparency tile -->
+                                    <img id="downloadTransparencyTile" src="./Editing - (10, 7).svg_files/transparent-tile-light.jpg" style="border: 1px solid #ccc;">
+                                    <!-- dowload background color -->
+                                    <input type="color" id="downloadBackgroundColor" value="#ffffff">
+    
+                                    <span style="display: none;">
+                                        <input type="text" id="colorConverter">
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr id="exportBackgroundColorRow">
+                                <td colspan="2" style="padding: 0px;">
+                                    <input type="checkbox" id="downloadUseBkgndColorChk"> <span style="font-size: 12px;">Use background color</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Quality:</td>
+                                <td>
+                                    <input type="number" id="downloadQualityInput" value="90" min="0" max="100" style="font-size: 12px; width: 36px;"><span style="font-size: 13px;">&nbsp;%</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input id="downloadQualityInputRange" style="width: 200px;" type="range" min="1" max="100" value="90">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div>
+                                        <input type="button" id="toolpreviewExporterDownloadBtn" class="toolpreview-editor-export-button" value="Download" onclick="quickeditorEditorManager.exporter.download();">
+                                    </div>
+                                    <div>
+                                        <input type="button" id="toolpreviewExporterSaveBtn" class="toolpreview-editor-export-button" value="Save" onclick="quickeditorEditorManager.exporter.save();">                      
+                                    </div>
+                                    <div style="display: none;">
+                                        <select id="exportSaveType">
+                                            <option value="create">Create</option>
+                                            <option value="update">Update Existing</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+    
+                <div id="exportSaveExistingDiv" style="display: none;">
+                    <input id="exportSaveExistingProjectID" type="text">
+                    <input id="exportSaveExistingOutputImage" type="text">
+                    <input id="exportSaveExistingJSONFile" type="text">
+                </div>
+    
+                <!-- Hidden info for save Project Data -->
+                <div id="exportSaveNewDiv" style="display: none;">
+                    <table>
+                        <tbody><tr>
+                            <td colspan="2">
+                                <h1>Save Image</h1>
+                            </td>
+                        </tr>
+                        <tr style="display: none;">
+                            <td colspan="2">
+                                <textarea id="projectJSON" name="project_json_file" cols="50" rows="4"></textarea>
+                            </td>
+                        </tr>               
+                        <tr>
+                            <td colspan="2"><span id="respMsg" style="color: red;"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Name: </td>
+                            <td>
+                                <input type="text" name="project_name" id="projectName"> <!-- done -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>type: </td>
+                            <td>
+                                <input type="text" id="projectType" name="project_type" value="image" readonly=""> <!-- done -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>File Format: </td>
+                            <td>
+                                <select name="output_image_mime" id="outputImageMIMESelect">
+                                    <option value="image/jpeg">JPEG</option>
+                                    <option value="image/png">PNG</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Source Image Filename: </td>
+                            <td>
+                                <input type="text" name="project_src_image_filename" id="projectSrcImageFilename"> <!-- done -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Source image: </td>
+                            <td>
+                                <img id="srcImage" name="project_src_image" style="width: 100px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Output image: </td>
+                            <td>
+                                <img id="outputImage" name="project_output_image" style="width: 100px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>No. of Edits: </td>
+                            <td>
+                                <input type="text" id="editCount" name="project_edit_count" style="width: 20px;" readonly="">
+                            </td>
+                        </tr>                
+                        <tr>
+                            <td>Stack Summary: </td>
+                            <td>
+                                <textarea id="stackSummary" name="project_stack_summary" cols="50" rows="2"></textarea> <!-- dont -->
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>Edit Stack: </td>
+                            <td>
+                                <textarea id="editStack" name="project_edit_stack" cols="50" rows="2"></textarea>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>Edit Index: </td>
+                            <td>
+                                <input type="text" id="editIndex" name="project_edit_index" cols="50" rows="4">
+                            </td>
+                        </tr>          
+                    </tbody></table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>			
+
+		<!-- FIREBASE STUFF -->
+                <script src="./Editing - (10, 7).svg_files/firebase-app.js"></script>
+        <script src="./Editing - (10, 7).svg_files/firebase-auth.js"></script>
+        <script src="./Editing - (10, 7).svg_files/firebase-messaging.js"></script>
+        <script src="./Editing - (10, 7).svg_files/firebase-analytics.js"></script>
+
+        <!-- Push notification manager class -->
+        <script src="./Editing - (10, 7).svg_files/PushNotificationManager.js"></script>	
+        <script src="./Editing - (10, 7).svg_files/FollowUserProfileNotificationDialog.js"></script>	
+        <script src="./Editing - (10, 7).svg_files/UpdateUserFollows.js"></script>	
+        <script src="./Editing - (10, 7).svg_files/AddNewDeviceDialog.js"></script>	<script>console.log('No follows to update');</script>  		
+		<!-- EDITOR LIBRARIES -->	
+		<script src="./Editing - (10, 7).svg_files/AppDownloadModal.js"></script>
+		<script src="./Editing - (10, 7).svg_files/CountdownTimer.js"></script>
+		<script src="./Editing - (10, 7).svg_files/CookieManager.js"></script>		
+		<script src="./Editing - (10, 7).svg_files/quickeditor-manager.js"></script><div id="cookieConsentDiv" class="cookieconsent">This site uses cookies for a better browsing experience. By continuing to use this website, you agree to our <a target="_blank" href="https://www.gifgit.com/privacy#cookies" style="color: rgb(255, 255, 255);">use of cookies</a> policy.&nbsp;&nbsp;<span id="cookieconsentBtn">ACCEPT</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="cookieconsentCloseBtn">CLOSE</span></div>
+		<script src="./Editing - (10, 7).svg_files/magic-wand.js"></script>
+		<script src="./Editing - (10, 7).svg_files/rest.js"></script>	
+		<script src="./Editing - (10, 7).svg_files/toolpreview-rest-init.js"></script>			
+		<script src="./Editing - (10, 7).svg_files/brush-preview.js"></script><div class="sp-container sp-hidden sp-light sp-input-disabled sp-palette-buttons-disabled sp-initial-disabled"><div class="sp-palette-container"><div class="sp-palette sp-thumb sp-cf"><div class="sp-cf sp-palette-row sp-palette-row-0"><span title="rgb(0, 0, 0)" data-color="rgb(0, 0, 0)" class="sp-thumb-el sp-thumb-dark sp-thumb-active"><span class="sp-thumb-inner" style="background-color:rgb(0, 0, 0);"></span></span><span title="rgb(68, 68, 68)" data-color="rgb(68, 68, 68)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(68, 68, 68);"></span></span><span title="rgb(102, 102, 102)" data-color="rgb(102, 102, 102)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(102, 102, 102);"></span></span><span title="rgb(153, 153, 153)" data-color="rgb(153, 153, 153)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(153, 153, 153);"></span></span><span title="rgb(204, 204, 204)" data-color="rgb(204, 204, 204)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(204, 204, 204);"></span></span><span title="rgb(238, 238, 238)" data-color="rgb(238, 238, 238)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(238, 238, 238);"></span></span><span title="rgb(243, 243, 243)" data-color="rgb(243, 243, 243)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(243, 243, 243);"></span></span><span title="rgb(255, 255, 255)" data-color="rgb(255, 255, 255)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(255, 255, 255);"></span></span></div><div class="sp-cf sp-palette-row sp-palette-row-1"><span title="rgb(255, 0, 0)" data-color="rgb(255, 0, 0)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(255, 0, 0);"></span></span><span title="rgb(255, 153, 0)" data-color="rgb(255, 153, 0)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(255, 153, 0);"></span></span><span title="rgb(255, 255, 0)" data-color="rgb(255, 255, 0)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(255, 255, 0);"></span></span><span title="rgb(0, 255, 0)" data-color="rgb(0, 255, 0)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(0, 255, 0);"></span></span><span title="rgb(0, 255, 255)" data-color="rgb(0, 255, 255)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(0, 255, 255);"></span></span><span title="rgb(0, 0, 255)" data-color="rgb(0, 0, 255)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(0, 0, 255);"></span></span><span title="rgb(153, 0, 255)" data-color="rgb(153, 0, 255)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(153, 0, 255);"></span></span><span title="rgb(255, 0, 255)" data-color="rgb(255, 0, 255)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(255, 0, 255);"></span></span></div><div class="sp-cf sp-palette-row sp-palette-row-2"><span title="rgb(244, 204, 204)" data-color="rgb(244, 204, 204)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(244, 204, 204);"></span></span><span title="rgb(252, 229, 205)" data-color="rgb(252, 229, 205)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(252, 229, 205);"></span></span><span title="rgb(255, 242, 204)" data-color="rgb(255, 242, 204)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(255, 242, 204);"></span></span><span title="rgb(217, 234, 211)" data-color="rgb(217, 234, 211)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(217, 234, 211);"></span></span><span title="rgb(208, 224, 227)" data-color="rgb(208, 224, 227)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(208, 224, 227);"></span></span><span title="rgb(207, 226, 243)" data-color="rgb(207, 226, 243)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(207, 226, 243);"></span></span><span title="rgb(217, 210, 233)" data-color="rgb(217, 210, 233)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(217, 210, 233);"></span></span><span title="rgb(234, 209, 220)" data-color="rgb(234, 209, 220)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(234, 209, 220);"></span></span></div><div class="sp-cf sp-palette-row sp-palette-row-3"><span title="rgb(234, 153, 153)" data-color="rgb(234, 153, 153)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(234, 153, 153);"></span></span><span title="rgb(249, 203, 156)" data-color="rgb(249, 203, 156)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(249, 203, 156);"></span></span><span title="rgb(255, 229, 153)" data-color="rgb(255, 229, 153)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(255, 229, 153);"></span></span><span title="rgb(182, 215, 168)" data-color="rgb(182, 215, 168)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(182, 215, 168);"></span></span><span title="rgb(162, 196, 201)" data-color="rgb(162, 196, 201)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(162, 196, 201);"></span></span><span title="rgb(159, 197, 232)" data-color="rgb(159, 197, 232)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(159, 197, 232);"></span></span><span title="rgb(180, 167, 214)" data-color="rgb(180, 167, 214)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(180, 167, 214);"></span></span><span title="rgb(213, 166, 189)" data-color="rgb(213, 166, 189)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(213, 166, 189);"></span></span></div><div class="sp-cf sp-palette-row sp-palette-row-4"><span title="rgb(224, 102, 102)" data-color="rgb(224, 102, 102)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(224, 102, 102);"></span></span><span title="rgb(246, 178, 107)" data-color="rgb(246, 178, 107)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(246, 178, 107);"></span></span><span title="rgb(255, 217, 102)" data-color="rgb(255, 217, 102)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(255, 217, 102);"></span></span><span title="rgb(147, 196, 125)" data-color="rgb(147, 196, 125)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(147, 196, 125);"></span></span><span title="rgb(118, 165, 175)" data-color="rgb(118, 165, 175)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(118, 165, 175);"></span></span><span title="rgb(111, 168, 220)" data-color="rgb(111, 168, 220)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(111, 168, 220);"></span></span><span title="rgb(142, 124, 195)" data-color="rgb(142, 124, 195)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(142, 124, 195);"></span></span><span title="rgb(194, 123, 160)" data-color="rgb(194, 123, 160)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(194, 123, 160);"></span></span></div><div class="sp-cf sp-palette-row sp-palette-row-5"><span title="rgb(204, 0, 0)" data-color="rgb(204, 0, 0)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(204, 0, 0);"></span></span><span title="rgb(230, 145, 56)" data-color="rgb(230, 145, 56)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(230, 145, 56);"></span></span><span title="rgb(241, 194, 50)" data-color="rgb(241, 194, 50)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(241, 194, 50);"></span></span><span title="rgb(106, 168, 79)" data-color="rgb(106, 168, 79)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(106, 168, 79);"></span></span><span title="rgb(69, 129, 142)" data-color="rgb(69, 129, 142)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(69, 129, 142);"></span></span><span title="rgb(61, 133, 198)" data-color="rgb(61, 133, 198)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(61, 133, 198);"></span></span><span title="rgb(103, 78, 167)" data-color="rgb(103, 78, 167)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(103, 78, 167);"></span></span><span title="rgb(166, 77, 121)" data-color="rgb(166, 77, 121)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(166, 77, 121);"></span></span></div><div class="sp-cf sp-palette-row sp-palette-row-6"><span title="rgb(153, 0, 0)" data-color="rgb(153, 0, 0)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(153, 0, 0);"></span></span><span title="rgb(180, 95, 6)" data-color="rgb(180, 95, 6)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(180, 95, 6);"></span></span><span title="rgb(191, 144, 0)" data-color="rgb(191, 144, 0)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(191, 144, 0);"></span></span><span title="rgb(56, 118, 29)" data-color="rgb(56, 118, 29)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(56, 118, 29);"></span></span><span title="rgb(19, 79, 92)" data-color="rgb(19, 79, 92)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(19, 79, 92);"></span></span><span title="rgb(11, 83, 148)" data-color="rgb(11, 83, 148)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(11, 83, 148);"></span></span><span title="rgb(53, 28, 117)" data-color="rgb(53, 28, 117)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(53, 28, 117);"></span></span><span title="rgb(116, 27, 71)" data-color="rgb(116, 27, 71)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(116, 27, 71);"></span></span></div><div class="sp-cf sp-palette-row sp-palette-row-7"><span title="rgb(102, 0, 0)" data-color="rgb(102, 0, 0)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(102, 0, 0);"></span></span><span title="rgb(120, 63, 4)" data-color="rgb(120, 63, 4)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(120, 63, 4);"></span></span><span title="rgb(127, 96, 0)" data-color="rgb(127, 96, 0)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(127, 96, 0);"></span></span><span title="rgb(39, 78, 19)" data-color="rgb(39, 78, 19)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(39, 78, 19);"></span></span><span title="rgb(12, 52, 61)" data-color="rgb(12, 52, 61)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(12, 52, 61);"></span></span><span title="rgb(7, 55, 99)" data-color="rgb(7, 55, 99)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(7, 55, 99);"></span></span><span title="rgb(32, 18, 77)" data-color="rgb(32, 18, 77)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(32, 18, 77);"></span></span><span title="rgb(76, 17, 48)" data-color="rgb(76, 17, 48)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(76, 17, 48);"></span></span></div><div class="sp-cf sp-palette-row sp-palette-row-selection"></div></div><div class="sp-palette-button-container sp-cf"><button type="button" class="sp-palette-toggle">less</button></div></div><div class="sp-picker-container"><div class="sp-top sp-cf"><div class="sp-fill"></div><div class="sp-top-inner"><div class="sp-color" style="background-color: rgb(255, 0, 0);"><div class="sp-sat"><div class="sp-val"><div class="sp-dragger" style="top: 0px; left: 0px;"></div></div></div></div><div class="sp-clear sp-clear-display" title="Clear Color Selection" style="display: none;"></div><div class="sp-hue"><div class="sp-slider" style="top: 0px;"></div></div></div><div class="sp-alpha"><div class="sp-alpha-inner"><div class="sp-alpha-handle" style="left: 0px;"></div></div></div></div><div class="sp-input-container sp-cf"><input class="sp-input" type="text" spellcheck="false"></div><div class="sp-initial sp-thumb sp-cf"></div><div class="sp-button-container sp-cf"><a class="sp-cancel" href="https://www.gifgit.com/image/brush-tool#">cancel</a><button type="button" class="sp-choose">choose</button></div></div></div>
+		
+		<script src="./Editing - (10, 7).svg_files/editor-utils.js"></script>
+		<script src="./Editing - (10, 7).svg_files/assetmanager.js"></script>
+		<script src="./Editing - (10, 7).svg_files/editstack.js"></script>	
+		
+		<script>
+		
+			// Variables for editstack
+			var layerIndex = 0;
+			var editingLayerMask = 0;
+		
+			var notSupportedDiv = document.getElementById("notSupportedDiv");
+			var uploadBtn = document.getElementById("uploadBtn");
+			var fileinput = document.getElementById("fileinput");
+			
+			initializeEditor();
+			
+			uploadBtn.addEventListener('click', function() { 
+				fileinput.click();
+			});
+			
+			// file loader event
+			fileinput.addEventListener('input', function(){
+			
+				if(this.files.length > 0){
+				
+				}else{
+					return;
+				}
+			
+				if(document.getElementById("quickEditorRadio").checked){
+
+					// Use Quick Editor
+					//alert("load the quick editor");
+					
+					var reader = new FileReader();
+					reader.onload = function(){
+					
+						// dataURL of uploaded image
+						var dataURL = reader.result;
+						
+						quickeditorEditorManager.loadFile("/image/brush-tool", dataURL, fileinput.files[0].name);
+						
+					};
+					reader.readAsDataURL(this.files[0]);				
+					
+				}else if(document.getElementById("onlineEditorRadio").checked){
+					// Use Online Editor
+					//alert("load the online app");
+					
+					// clear all previous data
+					localStorage.clear();				
+				
+					loadFile(this.files[0]);	
+				}
+				
+				document.getElementById("uploaderDiv").style.display = "none";
+			
+			});
+			
+			/** loadFile()
+			  * 1. 	Loadings the uploaded image as a dataURL
+			  * 2. 	Sets the dimensions of editorCanvas to the image variable and draws the image variable 
+			  * 	to editorCanvas and set
+			  *
+			  * @param {Object} file
+			  * @return nothing
+			  *
+			  */
+			function loadFile(file){
+
+				//fileSizeLbl.innerText = bytesToSize(file.size, " ");
+					
+				let reader = new FileReader();
+				reader.onload = function(){
+				
+					let dataURL = reader.result;
+					// alert(dataURL);
+					
+					var loadImage = new Image();
+					loadImage.onload = function(){
+					
+						//alert(loadImage.width + "," + loadImage.height);
+					
+						// set the editor image and file name to local storage
+						// localStorage.setItem("editor_image", dataURL); // this will be moved to asset library storage
+						localStorage.setItem("image_filename", file.name);
+						localStorage.setItem("canvas_width", loadImage.width);
+						localStorage.setItem("canvas_height", loadImage.height);
+						
+						// add the image as an asset to the asset library
+						// assetManager.add() (id, type, data)
+						
+						var asset_id = Date.now();
+						
+						assetManager.add(asset_id, "image_data_url", dataURL);
+						
+						// set the first edit entry to load the image from the asset library using its id
+						/*
+						var loadImageEditEntry = {};
+						loadImageEditEntry["edit"] = "load_image_asset";
+						loadImageEditEntry["asset_id"] = asset_id;
+						*/
+						
+						var loadImageEditEntry = new Object();
+						loadImageEditEntry.edit = "load_image_asset";
+						loadImageEditEntry.asset_id = asset_id;
+				
+						// add to the crop edit stack
+						editStack.add(loadImageEditEntry);			
+						
+						// start indicates the point beyond which undo actions won't go
+						editStack.start();
+						
+						//window.location.href = "/image/brush-tool";
+						window.location.replace("/image/editor/brush-tool");
+						
+					};
+					loadImage.src = dataURL;
+					
+
+
+				};
+				reader.readAsDataURL(file);
+			}
+
+		
+			// Checks if HTML5 is supported
+			function initializeEditor(){
+				if (typeof(Storage) !== "undefined") {
+					// Code for localStorage/sessionStorage.
+					
+					if (localStorage.getItem("edit_stack") === null) {
+					
+						//uploadImgDiv.style.display = "block";
+						//alert("no image");
+						
+					}else{
+
+						/*
+						// check if the edit stack exits and initialize if not
+						if (localStorage.getItem("edit_stack") === null) {
+							editStack.start();
+						}
+						*/
+						
+						// Set the cookie that there is an edit present
+						//setCookie("image_edit_present", "true", 30);
+
+						// Simulate an HTTP redirect:
+						//window.location.replace("/image/editor/brush-tool");
+						document.getElementById("continueAppEdit").style.display = "block";
+						
+					}
+
+				} else {
+				
+					// Sorry! No Web Storage support..
+					notSupportedDiv.style.display = "block";
+					
+				}
+			}
+			
+			function setCookie(cname, cvalue, exdays) {
+				var d = new Date();
+				d.setTime(d.getTime() + (exdays*24*60*60*1000));
+				var expires = "expires="+ d.toUTCString();
+				document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+			}
+
+		</script>
+		
+    
+
+		<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_2_host" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_2" name="aswift_2" browsingtopics="true" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;min-height:auto;max-height:none;min-width:auto;max-width:none;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="./Editing - (10, 7).svg_files/ads(4).html" data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement" data-load-complete="true"></iframe></div></ins><fencedframe id="ps_caff" style="display: none;"></fencedframe><iframe name="googlefcPresent" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;" src="./Editing - (10, 7).svg_files/saved_resource(2).html"></iframe><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" data-anchor-status="displayed" data-ad-status="filled" style="display: block; width: 1536px !important; height: 95px !important; bottom: auto !important; clear: none !important; float: none !important; left: 0px; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1; overflow: visible !important; padding: 0px !important; position: fixed; right: auto !important; top: 0px; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647; background: rgb(250, 250, 250) !important;" data-anchor-shown="true"><div id="aswift_3_host" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_3" name="aswift_3" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="./Editing - (10, 7).svg_files/zrt_lookup_fy2021.html" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CNOSy4ub7Y0DFZKeUAYdy7cq9w" data-load-complete="true"></iframe></div><div class="grippy-host" style="position: absolute !important; top: 90px !important; width: 100% !important;"><template shadowrootmode="closed"><ins class="ee" style="inset: auto !important; clear: none !important; display: block !important; float: none !important; height: 5px !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: relative !important; vertical-align: baseline !important; visibility: visible !important; width: auto !important; z-index: 1 !important; background-color: rgb(250, 250, 250) !important; box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px -1px, rgba(0, 0, 0, 0.1) 0px -1px 2px -1px !important;"><span style="display: block !important; width: 80px !important; height: 45px !important; top: 0px !important; left: 0% !important; pointer-events: none !important;"><svg style="margin: 0px !important; position: absolute !important; top: 0px !important; left: 0% !important; display: block !important; width: 80px !important; height: 30px !important; transform: none !important; pointer-events: initial !important;"><defs><filter id="dropShadowBottom" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><fecomponenttransfer in="SourceAlpha" result="TransferredAlpha"><fefuncr type="discrete" tableValues="0.5"></fefuncr><fefuncg type="discrete" tableValues="0.5"></fefuncg><fefuncb type="discrete" tableValues="0.5"></fefuncb></fecomponenttransfer><fegaussianblur in="TransferredAlpha" stdDeviation="2"></fegaussianblur><feoffset dx="0" dy="0" result="offsetblur"></feoffset><femerge><femergenode></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter></defs><path d="M0,4 L0,22 A6,6 0 0,0 6,28 L50,28 A6,6 0 0,0 56,22 L56,10 A6,6 0 0,1 61,4 Z" stroke="#FAFAFA" stroke-width="1" fill="#FAFAFA" style="filter: url(&quot;#dropShadowBottom&quot;);"></path><rect x="0" y="0" width="80" height="5" style="fill: rgb(250, 250, 250);"></rect><g class="up" stroke="#616161" stroke-width="2px" stroke-linecap="square"><line x1="22" y1="18" x2="28" y2="12"></line><line x1="28" y1="12" x2="34" y2="18"></line></g></svg></span></ins></template></div></ins><iframe name="__tcfapiLocator" src="./Editing - (10, 7).svg_files/saved_resource(3).html" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcInactive" src="./Editing - (10, 7).svg_files/saved_resource(4).html" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcLoaded" src="./Editing - (10, 7).svg_files/saved_resource(5).html" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe src="./Editing - (10, 7).svg_files/aframe.html" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="./Editing - (10, 7).svg_files/zrt_lookup_fy2021(1).html" style="display: none;"></iframe><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

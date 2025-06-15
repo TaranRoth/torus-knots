@@ -1,6 +1,7 @@
 import sqlite3 as sql
 import math
 import sys
+import pickle
 from invs.signature import get_sig
 from invs.upsilon import get_upsilon
 from invs.arf import get_arf
@@ -27,6 +28,7 @@ invariant_presets = {
     'unknotting' : ('unknotting', lambda p, q: ((p - 1) * (q - 1)) / 2, 'INTEGER'),
     'n3genus' : ('n3genus', get_n3genus, 'INTEGER'),
     'alexander_blob' : ('alexander_blob', get_alexander_blob, 'BLOB'),
+    # 'standard_diagram_blob' : ('standard_diagram_blob', lambda p, q: pickle.dumps(), 'BLOB')
 }
 # invariants = [invariant_presets['sig'], invariant_presets['ups'], invariant_presets['arf'], invariant_presets['d'], invariant_presets['alexander'], invariant_presets['pinch']]
 invariants = [invariant for key, invariant in invariant_presets.items()]
