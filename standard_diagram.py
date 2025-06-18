@@ -92,4 +92,4 @@ if __name__ == '__main__':
     # draw_standard_diagram(10, 7, 20, .8, 1.2)
     p = int(sys.argv[1])
     q = int(sys.argv[2])
-    img = save_standard_diagram_img(p, q, f'imgs/({p}, {q}).svg', 30, .7, 1.2, 2048, 2048, True, [1, 2, True])
+    img = save_standard_diagram_img(p, q, f'imgs/({p}, {q}).svg', 30, .7, 1.2, 4096, 4096, True, [1, 2, True])

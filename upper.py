@@ -32,4 +32,17 @@ def get_uppers(p: int, q: int, invs: list):
     # Longo
     if q % 4 == 0 and (((q / 2) + 1) ** 2 == p or ((q / 2) - 1) ** 2 == p):
         uppers.append(q / 2 - 1)
+
+    # Lobb
+    if p == 4 and q == 9:
+        uppers.append(1)
+
+    # Unknown masters thesis person
+    if p == 11 and q == 4:
+        uppers.append(1)
+
+    # Bender Roth
+    if (p == 13 or p == 11) and q == 8:
+        uppers.append(1)
+    
     return uppers

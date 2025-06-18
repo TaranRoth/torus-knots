@@ -36,5 +36,7 @@ def get_lowers(p: int, q: int, invs: list):
             for i in range(len(poly)):
                 if poly[i][0] == 0 and len(poly) > i + 1:
                     lowers.append(poly[i + 1][0] - 1)
+    
+
     return lowers
 

@@ -9,7 +9,7 @@ def get_unsimplified_poly(n):
         return Polynomial(coeffs)
 
 def get_alexander(p: int, q: int, cursor):
-    disregard_alexander = True
+    disregard_alexander = False
     if disregard_alexander:
         return [(0, 1)]
 
