@@ -1,42 +1,9 @@
 import sys
 import math
+import os
 from svg_turtle import SvgTurtle
 
-def forward_break(pen, forward_amt, break_points, scalar, horizontal, break_length_prop=.5):
-    break_length = scalar * break_length_prop
-    heading = pen.heading()
-    start = pen.pos()
-    break_flag = False
-    for break_point in break_points:
-        horizontal_cond = break_point[1] == start[1] and break_point[0] <= start[0] and break_point[0] >= start[0] - forward_amt
-        vertical_cond =  break_point[0] == start[0] and break_point[1] <= start[1] and break_point[1] >= start[1] - forward_amt
-        if (horizontal and horizontal_cond) or (not horizontal and vertical_cond):
-            break_flag = True
-            break_dist = abs(start[0] - break_point[0])
-            pen.down()
-            pen.forward(break_dist)
-            pen.up()
-            pen.forward(break_length)
-            pen.down()
-            pen.forward(forward_amt - (break_dist + break_length))
-            break
-    if not break_flag:
-        pen.forward(forward_amt)
-            
-
 def draw_band_diagram(p: int, q: int, scalar, prop, prop_2, pen, band_code):
-    def get_coord(row, column=-scalar*(math.floor(p / 2))):
-        return (-row * scalar, column)
-    horizontal_breaks = []
-    vertical_breaks = []
-    row = 2
-    for crossing in band_code:
-        if crossing == '1':
-            horizontal_breaks.append(get_coord(row))
-        if crossing == '0':
-            vertical_breaks.append(get_coord(row))
-        row += 1
-
     pen.color("black")
     pen.penup()
     pen.hideturtle()
@@ -89,16 +56,63 @@ def draw_band_diagram(p: int, q: int, scalar, prop, prop_2, pen, band_code):
         pen.setheading(270)
         pen.forward((c * 2 - 1) * scalar)
         pen.setheading(180)
-        forward_break(pen, (init[0] - final[0]) + ((c * 2 + 1) * scalar), horizontal_breaks, scalar, True)
+        pen.forward((init[0] - final[0]) + ((c * 2 + 1) * scalar))
         pen.setheading(90)
         pen.forward((final[1] - init[1]) + ((c * 2 - 1) * scalar))
         pen.setheading(0)
         pen.forward(c * scalar)
         c += 1
+    
+    if len(band_code) > 0:
+        bg_color = '#D5D3D3'
+        pen.up()
+        pen.goto((-math.floor(p / 2) * scalar, -scalar))
+        right_start = pen.pos()
+        pen.down()
+        pen.color(bg_color)
+        pen.forward(scalar * math.floor(p / 2))
+        left_start = pen.pos()
+        pen.up()
+        pen.goto((-math.floor(p / 2)) * scalar, -scalar * (len(band_code) + 2))
+        pen.down()
+        pen.forward(scalar * math.floor(p / 2))
+        for start in [right_start, left_start]:
+            pen.up()
+            pen.goto(start)
+            pen.color('black')
+            pen.down()
+            pen.setheading(270)
+            c = 0
+            for crossing in band_code:
+                c += 1
+                if crossing == '1':
+                    base = pen.pos()
+                    pen.up()
+                    pen.color(bg_color)
+                    pen.setheading(180)
+                    pen.goto((start[0] + (1 - prop) * scalar, start[1] - scalar * c))
+                    pen.down()
+                    pen.forward((1 - prop) * scalar * 2)
+                    pen.up()
+                    pen.goto(base)
+                    pen.setheading(270)
+                    pen.color('black')
+                    pen.down()
+                    pen.forward(scalar)
+                if crossing == '0':
+                    pen.forward(scalar * prop)
+                    pen.up()
+                    pen.forward((1 - prop) * 2 * scalar)
+                    pen.down()
+            pen.forward(scalar * prop)
 
 
 def save_band_diagram_img(p: int, q: int, filename: str, scalar=30, prop=.7, prop_2=1.2, width=2048, height=2048, band_code=''):
-    filename = filename[:-4] + '-' + band_code + '.svg'
+    try:
+        os.mkdir(os.getcwd() + f'/imgs/({p}, {q})')
+    except FileExistsError:
+        pass
+    filename = filename[:-4] + '/' + band_code + '.svg'
     pen = SvgTurtle(width, height)
     draw_band_diagram(p, q, scalar, prop, prop_2, pen, band_code)
     pen.save_as(filename)
@@ -108,4 +122,5 @@ if __name__ == '__main__':
     # draw_standard_diagram(10, 7, 20, .8, 1.2)
     p = int(sys.argv[1])
     q = int(sys.argv[2])
-    img = save_band_diagram_img(p, q, f'imgs/({p}, {q}).svg', 30, .7, 1.2, 4096, 4096, '1')
+    band_code = str(sys.argv[3])
+    img = save_band_diagram_img(p, q, f'imgs/({p}, {q}).svg', 30, .7, 1.2, 1024, 1024, band_code)
