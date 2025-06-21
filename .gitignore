@@ -197,3 +197,4 @@ knots.db
 backup/
 test.py
 sheets_key.json
+token.json
