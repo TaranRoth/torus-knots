@@ -196,3 +196,4 @@ cython_debug/
 knots.db
 backup/
 test.py
+sheets_key.json

@@ -1,6 +1,7 @@
 import sys
 import math
 import os
+import turtle
 from svg_turtle import SvgTurtle
 
 def draw_band_diagram(p: int, q: int, scalar, prop, prop_2, pen, band_code):
@@ -82,6 +83,7 @@ def draw_band_diagram(p: int, q: int, scalar, prop, prop_2, pen, band_code):
             pen.color('black')
             pen.down()
             pen.setheading(270)
+            pen.forward(scalar * (1 - prop))
             c = 0
             for crossing in band_code:
                 c += 1
@@ -100,7 +102,7 @@ def draw_band_diagram(p: int, q: int, scalar, prop, prop_2, pen, band_code):
                     pen.down()
                     pen.forward(scalar)
                 if crossing == '0':
-                    pen.forward(scalar * prop)
+                    pen.forward(scalar * (prop - (1 - prop)))
                     pen.up()
                     pen.forward((1 - prop) * 2 * scalar)
                     pen.down()
